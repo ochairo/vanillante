@@ -1,4 +1,5 @@
 import { setRoutes } from "./core/router";
 import { routes } from "./routes";
 
-setRoutes(routes);
+const rootElement = document.getElementById("root")!;
+setRoutes(routes, rootElement);
