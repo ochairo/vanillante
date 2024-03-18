@@ -1,0 +1,32 @@
+{
+  "name": "vanillatte",
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "// *  Start api mock server with mock data                                               ": "",
+    "start:api": "node src/mock/server/api.js",
+    "// *  Start application (local)                                                          ": "",
+    "start:local": "webpack serve --config=.config/webpack/local.config.cjs",
+    "// *  Start application (dev)                                                            ": "",
+    "start:dev": "webpack serve --config=.config/webpack/development.config.cjs",
+    "// *  Start application (local) and api with mock data                                   ": "",
+    "start:mock": "npm run start:local & npm run start:api"
+  },
+  "dependencies": {
+    "fastify": "^4.26.2"
+  },
+  "devDependencies": {
+    "@swc/core": "^1.4.8",
+    "css-loader": "^6.10.0",
+    "html-loader": "^5.0.0",
+    "html-webpack-plugin": "^5.6.0",
+    "mini-css-extract-plugin": "^2.8.1",
+    "sass": "^1.72.0",
+    "sass-loader": "^14.1.1",
+    "style-loader": "^3.3.4",
+    "swc-loader": "^0.2.6",
+    "webpack": "^5.90.3",
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^5.0.3"
+  }
+}

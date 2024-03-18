@@ -1,0 +1,21 @@
+{
+  "recommendations": [
+    "aaron-bond.better-comments",
+    "chrmarti.regex",
+    "streetsidesoftware.code-spell-checker",
+    "usernamehw.errorlens",
+    "wmaurer.change-case",
+    "esbenp.prettier-vscode",
+    "EditorConfig.EditorConfig",
+    "foxundermoon.shell-format",
+    "GitHub.copilot",
+    "GitHub.copilot-chat",
+    "eamodio.gitlens",
+    "mhutchie.git-graph",
+    "formulahendry.auto-close-tag",
+    "anseki.vscode-color",
+    "dbaeumer.vscode-eslint",
+    "DavidAnson.vscode-markdownlint",
+    "hediet.vscode-drawio",
+  ]
+}
