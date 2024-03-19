@@ -1,5 +1,4 @@
 const HTMLWebpackPlugin = require("html-webpack-plugin");
-const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const path = require("path");
 
 module.exports = {
@@ -19,24 +18,31 @@ module.exports = {
         test: /\.html$/i,
         loader: "html-loader",
         options: {
-          sources: false, // Disable URL handling to prevent unexpected behavior with imports
+          sources: false,
         },
       },
       {
-        test: /\.scss$/,
-        use: [MiniCssExtractPlugin.loader, "css-loader", "sass-loader"],
+        test: /.scss$/,
+        use: [
+          "raw-loader",
+          {
+            loader: "sass-loader",
+            options: {
+              sassOptions: {
+                includePaths: [path.resolve("./", "node_modules")],
+              },
+            },
+          },
+        ],
       },
     ],
   },
   resolve: {
-    extensions: [".ts", ".js", ".html"], // Add '.html' to extensions for importing HTML files
+    extensions: [".ts", ".js", ".html", ".scss", ".css"],
   },
   plugins: [
     new HTMLWebpackPlugin({
       template: "./src/app/main.html",
-    }),
-    new MiniCssExtractPlugin({
-      filename: "[name].css",
     }),
   ],
   watchOptions: {
