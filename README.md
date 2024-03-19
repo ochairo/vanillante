@@ -17,6 +17,7 @@ It aims to create systems that are easy to understand, maintain, and test.
   - It improve team-productivity, code-maintainability and code-adaptability.
   - It leads to a good implementation of the user's requirements.
   - It makes easier the code review process.
+  - Can use Atomic-design, Microservice-architecture or other concepts together with Clean-architecture
 - Cons:
   - It can be over-engineering for small projects.
   - It is not focused on performance.
