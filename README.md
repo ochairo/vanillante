@@ -20,7 +20,6 @@ It aims to create systems that are easy to understand, maintain, and test.
   - It can be used together with other concepts such as the following:
     - Atomic-design
     - Micro-frontend
-    - etc...
 - Cons:
   - It can be over-engineering for small projects.
   - It is not focused on performance.
