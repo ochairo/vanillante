@@ -1,4 +1,4 @@
-# vanillatte [![vanillatte](https://img.shields.io/badge/---.svg?style=flat&color=fffff4&label=🍦%20vanillatte&labelColor=fffff4)](https://github.com/users/ochairo/projects/5)
+# vanillatte
 
 [![Github backlog](https://img.shields.io/badge/-in_progress-262626.svg?style=plastic&logo=github&logoColor=f2f2f2&label=backlog&labelColor=262626&color=blue)](https://github.com/users/ochairo/projects/5)
 [![GitHub issues](https://img.shields.io/github/issues/ochairo/vanillatte?style=plastic&logo=github&logoColor=f2f2f2&label=issues&labelColor=262626)](https://github.com/ochairo/vanillatte/issues)
