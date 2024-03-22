@@ -40,7 +40,7 @@ It aims to create frontend applications that are easy to understand, maintain an
 ├── docs                              // documents for code-based-wiki
 │   ├── images
 │   └── wiki
-├── scripts                           // shellscripts
+├── scripts                           // shellscript to automatize
 │   └── setup
 │
 └── src
@@ -52,7 +52,7 @@ It aims to create frontend applications that are easy to understand, maintain an
     │   │       ├── molecules
     │   │       └── organisms
     │   │
-    │   ├── features                  // features
+    │   ├── features                  // most of the requirements will be developed here
     │   │   └── ${feature name}
     │   │       ├── data
     │   │       │   ├── datasources
