@@ -1,0 +1,11 @@
+# TODO: Replace echo with actual commands
+pre-push:
+  parallel: true
+  commands:
+    test:
+      run: echo "TODO:Running tests"
+
+pre-commit:
+  commands:
+    format:
+      run: echo "TODO:Running formatter"

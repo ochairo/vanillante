@@ -12,7 +12,6 @@
     "// *  Start application (local) and api with mock data                                   ": "",
     "start:mock": "npm run start:local & npm run start:api"
   },
-  "dependencies": {},
   "devDependencies": {
     "@swc/core": "^1.4.8",
     "@typescript-eslint/eslint-plugin": "^7.3.1",
@@ -21,6 +20,7 @@
     "express": "^4.19.1",
     "html-loader": "^5.0.0",
     "html-webpack-plugin": "^5.6.0",
+    "lefthook": "^1.6.7",
     "postcss-loader": "^8.1.1",
     "swc-loader": "^0.2.6",
     "webpack": "^5.90.3",
