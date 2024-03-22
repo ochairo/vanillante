@@ -7,8 +7,7 @@ Classes:
 
 - Example: `Component`, `App`
 - Camel case with first letter uppercase
-- Should not end with `Impl` or any other word which describes a specific implementation of an
-  interface.
+- TODO: ...
 
 Interfaces:
 
