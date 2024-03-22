@@ -13,7 +13,7 @@ Classes:
 Interfaces:
 
 - Follow the same rules as Classes
-- Only the interfaces inside `domain/interfaces` Should have `I` in the name to identifying it as an interface.
+- Only the interfaces inside `domain/interfaces` should have `I` in the name to identifying it as an interface.
 
 Methods and functions:
 
