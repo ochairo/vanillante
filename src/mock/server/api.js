@@ -1,26 +1,23 @@
-import cors from "@fastify/cors";
-import Fastify from "fastify";
+import express from "express";
 import { readFileSync } from "fs";
 
-const fastify = Fastify({
-  logger: true,
+const app = express();
+const PORT = process.env.PORT || 3000;
+
+// Disable CORS (Cross-Origin Resource Sharing)
+app.use((req, res, next) => {
+  res.setHeader("Access-Control-Allow-Origin", "*");
+  res.setHeader("Access-Control-Allow-Methods", "GET, POST, PUT, DELETE");
+  res.setHeader("Access-Control-Allow-Headers", "Content-Type, Authorization");
+  next();
 });
 
-await fastify.register(cors, {
-  origin: "*",
-});
-
-// Declare a route
-fastify.get("/showcase/get", async function handler() {
+// API endpoints
+app.get("/showcase/get", async (_, res) => {
   const data = readFileSync("src/mock/data/showcase/get/success.json", "utf8");
-  const response = await JSON.parse(data);
-  return response;
+  res.json(await JSON.parse(data));
 });
 
-// Run the server!
-try {
-  await fastify.listen({ port: 3000 });
-} catch (err) {
-  fastify.log.error(err);
-  process.exit(1);
-}
+app.listen(PORT, () => {
+  console.log(`Server is running on port ${PORT}`);
+});
