@@ -24,13 +24,13 @@ It aims to create frontend applications that are easy to understand, maintain an
 - Pros:
   - Improve code maintainability and adaptability.
   - Leads to a good implementation of user requirements.
+  - Reduce user requirements bugs and programming bugs.
   - Makes easier the code review process.
   - Makes easier to understand the code.
-  - Reduce user requirements bugs and programming bugs.
 - Cons:
-  - Hard to understand programming concepts.
+  - Makes harder to understand the programing concepts.
   - Can be over-engineering for small projects.
-  - Is not focused on performance.
+  - It is not focused on performance.
 
 ![architecture](./docs/images/architecture.png)
 
