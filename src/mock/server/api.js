@@ -12,7 +12,7 @@ await fastify.register(cors, {
 
 // Declare a route
 fastify.get("/showcase/get", async function handler() {
-  const data = readFileSync("src/mock/data/showcase/get.json", "utf8");
+  const data = readFileSync("src/mock/data/showcase/get/success.json", "utf8");
   const response = await JSON.parse(data);
   return response;
 });
