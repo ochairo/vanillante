@@ -1,6 +1,6 @@
 # Naming Conventions
 
-In general should follow TypeScript naming conventions.
+In general should follow TypeScript naming conventions.<br />
 See: https://github.com/Microsoft/TypeScript/wiki/Coding-guidelines
 
 Classes:
