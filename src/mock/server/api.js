@@ -1,21 +1,21 @@
+import cors from "@fastify/cors";
 import Fastify from "fastify";
 import { readFileSync } from "fs";
+
 const fastify = Fastify({
   logger: true,
 });
 
+await fastify.register(cors, {
+  origin: "*",
+});
+
 // Declare a route
-fastify.get(
-  "/user/00001/items/favorite/get",
-  async function handler(request, reply) {
-    const data = readFileSync(
-      "src/mock/data/user/00001/items/favorite/get.json",
-      "utf8"
-    );
-    const response = await JSON.parse(data);
-    return response;
-  }
-);
+fastify.get("/showcase/get", async function handler() {
+  const data = readFileSync("src/mock/data/showcase/get.json", "utf8");
+  const response = await JSON.parse(data);
+  return response;
+});
 
 // Run the server!
 try {

@@ -1,4 +1,4 @@
-import { setRoutes } from "./core/router";
+import { setRoutes } from "@shared/router/router";
 import { routes } from "./routes";
 
 const rootElement = document.getElementById("root")!;

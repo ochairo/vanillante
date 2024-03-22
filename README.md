@@ -7,64 +7,64 @@
 
 ## Overview
 
-This is a clean architecture proposal.
+This is a vanilla-ts spa sample.
 
-## Clean architecture
+## Architecture
 
-It is a concept that can be applied to any project regardless of the platform or framework.<br />
-It aims to create systems that are easy to understand, maintain, and test.
+The architecture of this project takes concepts such as<br />
+clean architecture, atomic design and readable code.<br />
+It aims to create frontend applications that are easy to understand, maintain and modify.
 
 - Pros:
-  - It improve team-productivity, code-maintainability and code-adaptability.
-  - It leads to a good implementation of the user's requirements.
-  - It makes easier the code review process.
-  - It can be used together with other concepts such as the following:
-    - Atomic-design
-    - Micro-frontend
+  - Improve code maintainability and adaptability.
+  - Leads to a good implementation of user requirements.
+  - Makes easier the code review process.
+  - Makes easier to understand the code.
+  - Reduce user requirements bugs and programming bugs.
 - Cons:
-  - It can be over-engineering for small projects.
-  - It is not focused on performance.
+  - Hard to understand programming concepts.
+  - Can be over-engineering for small projects.
+  - Is not focused on performance.
 
 ![architecture](./docs/images/architecture.png)
 
 ## Directory structure
 
 ```sh
-├── docs                              // all documents for code-based-wiki
+├── docs                              // documents for code-based-wiki
 │   ├── images
 │   └── wiki
-├── scripts                           // all script codes
+├── scripts                           // shellscripts
 │   └── setup
 │
 └── src
     ├── app
-    │   ├── shared                    // all shared codes for features
-    │   │   ├── data                  // shared data
-    │   │   │   ├── datasources       // shared datasources
-    │   │   │   └── repositories      // shared repositories
-    │   │   ├── domain                // shared domain
-    │   │   │   ├── entities          // shared entities
-    │   │   │   └── usecases          // shared usecases
-    │   │   └── presentation          // shared components (atomic-design)
-    │   │       ├── atoms             // shared atoms
-    │   │       ├── molecules         // shared molecules
-    │   │       └── organisms         // shared organisms
+    │   ├── shared
+    │   │   ├── router
+    │   │   └── ui-components
+    │   │       ├── atoms
+    │   │       ├── molecules
+    │   │       └── organisms
     │   │
-    │   └── features                  // all features
-    │       └── ${feature name}       // feature
-    │           ├── data              // feature specific data
-    │           │   ├── datasources   // feature specific datasources
-    │           │   └── repositories  // feature specific repositories
-    │           ├── domain            // feature specific domain
-    │           │   ├── entities      // feature specific entities
-    │           │   └── usecases      // feature specific usecases
-    │           └── presentation      // feature specific components (not atomic-design)
+    │   ├── features                  // features
+    │   │   └── ${feature name}
+    │   │       ├── data
+    │   │       │   ├── datasources
+    │   │       │   └── repositories
+    │   │       ├── domain
+    │   │       │   ├── entities
+    │   │       │   └── usecases
+    │   │       └── presentation
+    │   │
+    │   ├── main.html
+    │   ├── main.ts
+    │   └── routes.ts
     │
-    ├── mock                          // all mock codes
+    ├── mock                          // mock codes
     │   ├── data                      // mock-data for test code and local server
     │   └── server                    // mock-server for local development
     │
-    └── test                          // all test codes
+    └── test                          // test codes
         ├── e2e                       // end-to-end test code
         └── unit                      // unit test code
 ```

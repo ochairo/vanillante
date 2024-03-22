@@ -1,4 +1,4 @@
-var html = require("./error.component.html").default;
+import template from "@error/presentation/error.component.html";
 
 export class ErrorComponent extends HTMLElement {
   _shadowRoot: ShadowRoot;
@@ -7,7 +7,7 @@ export class ErrorComponent extends HTMLElement {
   constructor() {
     super();
     this._shadowRoot = this.attachShadow({ mode: "open" });
-    this._template = html;
+    this._template = template;
   }
 
   connectedCallback() {

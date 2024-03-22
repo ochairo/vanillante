@@ -1,47 +1,65 @@
+import { ShowcaseData } from "@showcase/domain/entities/showcase.entity";
+import GetShowcase from "@showcase/domain/usecases/get-showcase.usecase";
+import template from "@showcase/presentation/showcase.component.html";
+import style from "@showcase/presentation/showcase.component.scss";
+
 class ShowcaseComponent extends HTMLElement {
   private _shadowRoot: ShadowRoot;
-  private _apiData: string[] = [];
+  private _getShowcase: GetShowcase | null;
+  private _apiData: ShowcaseData[] = [];
 
-  constructor() {
+  constructor(getShowcase?: GetShowcase) {
     super();
+    this._getShowcase = getShowcase || null;
     this._shadowRoot = this.attachShadow({ mode: "open" });
-    this.render();
   }
 
   connectedCallback() {
+    this.render();
     this.setupEventListeners();
   }
 
   private async render() {
-    const style = require("./showcase.component.scss").default;
-    const htmlTemplate = require("./showcase.component.html").default;
-    this._shadowRoot.innerHTML = `<style>${style}</style>${htmlTemplate}`;
+    this._shadowRoot.innerHTML = `<style>${style}</style>${template}`;
 
-    const apiData = await this.fetchData();
-    this._apiData = apiData;
-
-    const tbody = this._shadowRoot.querySelector("tbody");
-    if (tbody) {
-      tbody.innerHTML = this.generateTableRows(apiData);
+    if (this._getShowcase) {
+      try {
+        const data = await this._getShowcase.execute();
+        this._apiData = data;
+        this.renderTable();
+      } catch (error) {
+        console.error("Error fetching data:", error);
+        this.displayError("Error fetching data");
+      }
     }
   }
 
-  private async fetchData(): Promise<string[]> {
-    // Simulate API call
-    return ["Data 1", "Data 2", "Data 3"];
+  private renderTable() {
+    const tbody = this._shadowRoot.querySelector("tbody");
+    if (tbody) {
+      tbody.innerHTML = this._apiData
+        .map(
+          (item) =>
+            `
+          <tr>
+            <td>${item.id}</td>
+            <td>${item.name}</td>
+            <td>${item.description}</td>
+            <td>${item.price}</td>
+          </tr>
+          `
+        )
+        .join("");
+    }
   }
 
   private setupEventListeners() {
-    const submitBtn = this._shadowRoot.querySelector(".submit-btn");
-    if (submitBtn) {
-      submitBtn.addEventListener("click", () => {
-        console.log("Click");
-      });
-    }
+    // Setup event listeners
   }
 
-  private generateTableRows(data: string[]): string {
-    return data.map((item) => `<tr><td>${item}</td></tr>`).join("");
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
+  private displayError(message: string) {
+    // Display error message in the component
   }
 }
 

@@ -9,6 +9,17 @@
     "noPropertyAccessFromIndexSignature": true,
     "noUncheckedIndexedAccess": true,
     "outDir": "./dist",
+    "paths": {
+      // FEATURES
+      "@showcase/*": ["./src/app/features/showcase/*"],
+      "@error/*": ["./src/app/features/error/*"],
+      // SHARED
+      "@shared/*": ["./src/app/shared/*"],
+      // MOCK
+      "@mock/*": ["./src/mock/*"],
+      // TEST
+      "@test/*": ["./src/test/*"]
+    },
     "resolveJsonModule": true,
     "sourceMap": true,
     "strict": true,
@@ -16,5 +27,11 @@
     "types": ["node"]
   },
   "exclude": ["node_modules", "dist"],
-  "include": ["src/**/*.ts", "src/**/*.tsx", "src/**/*.json", "src/**/*.html"]
+  "include": [
+    "src/**/*.ts",
+    "src/**/*.tsx",
+    "src/**/*.json",
+    "src/**/*.html",
+    "tsconfig.d.ts"
+  ]
 }

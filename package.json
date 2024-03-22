@@ -6,17 +6,21 @@
     "// *  Start api mock server with mock data                                               ": "",
     "start:api": "node src/mock/server/api.js",
     "// *  Start application (local)                                                          ": "",
-    "start:local": "webpack serve --config=.config/webpack/local.config.cjs",
+    "start:local": "webpack serve --config=webpack.config.cjs",
     "// *  Start application (dev)                                                            ": "",
-    "start:dev": "webpack serve --config=.config/webpack/development.config.cjs",
+    "start:dev": "webpack serve --config=webpack.config.cjs",
     "// *  Start application (local) and api with mock data                                   ": "",
     "start:mock": "npm run start:local & npm run start:api"
   },
   "dependencies": {
+    "@fastify/cors": "^9.0.1",
     "fastify": "^4.26.2"
   },
   "devDependencies": {
     "@swc/core": "^1.4.8",
+    "@typescript-eslint/eslint-plugin": "^7.3.1",
+    "@typescript-eslint/parser": "^7.3.1",
+    "eslint": "^8.57.0",
     "html-loader": "^5.0.0",
     "html-webpack-plugin": "^5.6.0",
     "raw-loader": "^4.0.2",

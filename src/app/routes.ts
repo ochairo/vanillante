@@ -1,37 +1,23 @@
-import { Route } from "./core/router";
+import errorModule from "@error/error.module";
+import { RouteConfig } from "@shared/router/router";
+import showcaseModule from "@showcase/showcase.module";
 
-export const routes: Route[] = [
+export const routes: RouteConfig[] = [
   {
     path: "/",
-    elementLoader: () =>
-      import(
-        /* webpackChunkName: "showcase" */
-        "./features/showcase/presentation/showcase.component"
-      ),
+    componentLoader: showcaseModule,
   },
   {
     path: "/showcase",
-    elementLoader: () =>
-      import(
-        /* webpackChunkName: "showcase" */
-        "./features/showcase/presentation/showcase.component"
-      ),
+    componentLoader: showcaseModule,
   },
   {
     path: "/error",
-    elementLoader: () =>
-      import(
-        /* webpackChunkName: "error" */
-        "./features/error/presentation/error.component"
-      ),
+    componentLoader: errorModule,
   },
   {
     default: {
-      elementLoader: () =>
-        import(
-          /* webpackChunkName: "error" */
-          "./features/error/presentation/error.component"
-        ),
+      componentLoader: errorModule,
     },
   },
 ];
