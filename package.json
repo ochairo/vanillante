@@ -6,9 +6,9 @@
     "// *  Start api mock server with mock data                                               ": "",
     "start:api": "node src/mock/server/api.js",
     "// *  Start application (local)                                                          ": "",
-    "start:local": "webpack serve --config=webpack.config.cjs",
+    "start:local": "webpack serve --config=webpack.config.cjs --define-process-env-node-env=local",
     "// *  Start application (dev)                                                            ": "",
-    "start:dev": "webpack serve --config=webpack.config.cjs",
+    "start:dev": "webpack serve --config=webpack.config.cjs --define-process-env-node-env=dev",
     "// *  Start application (local) and api with mock data                                   ": "",
     "start:mock": "npm run start:local & npm run start:api"
   },

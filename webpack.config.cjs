@@ -2,8 +2,9 @@ const HtmlWebpackPlugin = require("html-webpack-plugin");
 const path = require("path");
 
 // TODO: Add webpack-merge
+console.info("NODE_ENV:", process.env.NODE_ENV);
 module.exports = {
-  mode: "development",
+  mode: "production",
   entry: "./src/app/main.ts",
   output: { path: path.resolve(__dirname, "dist"), filename: "bundle.js" },
   module: {
