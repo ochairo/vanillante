@@ -1,7 +1,7 @@
 import { ShowcaseData } from "@showcase/domain/entities/showcase.entity";
 import GetShowcase from "@showcase/domain/usecases/get-showcase.usecase";
+import style from "@showcase/presentation/showcase.component.css";
 import template from "@showcase/presentation/showcase.component.html";
-import style from "@showcase/presentation/showcase.component.scss";
 
 class ShowcaseComponent extends HTMLElement {
   private _shadowRoot: ShadowRoot;

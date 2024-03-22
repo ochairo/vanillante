@@ -1,5 +1,5 @@
+import style from "@error/presentation/error.component.css";
 import template from "@error/presentation/error.component.html";
-import style from "@error/presentation/error.component.scss";
 
 export class ErrorComponent extends HTMLElement {
   _shadowRoot: ShadowRoot;

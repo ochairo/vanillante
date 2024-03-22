@@ -11,11 +11,11 @@ module.exports = {
     rules: [
       { test: /\.ts$/i, loader: "swc-loader" },
       { test: /\.html$/i, loader: "html-loader" },
-      { test: /\.scss$/i, use: ["raw-loader", "sass-loader"] },
+      { test: /\.css$/i, use: ["css-loader", "postcss-loader"] },
     ],
   },
   resolve: {
-    extensions: [".ts", ".js", ".html", ".scss", ".css"],
+    extensions: [".ts", ".js", ".html", ".css"],
     alias: {
       // FEATURES
       "@showcase": path.resolve("src/app/features/showcase"),

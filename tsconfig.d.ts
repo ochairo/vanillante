@@ -3,7 +3,7 @@ declare module "*.html" {
   export default content;
 }
 
-declare module "*.scss" {
+declare module "*.css" {
   const content: string;
   export default content;
 }
