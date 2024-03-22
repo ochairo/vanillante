@@ -7,7 +7,7 @@
 
 ## Overview
 
-This is a vanilla-ts spa sample for clean architecture.
+This is a vanilla-ts spa sample.
 
 ## Tech stack
 
