@@ -2,6 +2,7 @@ import errorModule from "@error/error.module";
 import { RouteConfig } from "@shared/router/router";
 import showcaseModule from "@showcase/showcase.module";
 
+// LazyLoad feature modules
 export const routes: RouteConfig[] = [
   {
     path: "/",
