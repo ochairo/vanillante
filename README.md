@@ -101,3 +101,9 @@ You can choose to use setup shellscript, setup manually or use github codespace.
   - Application will start at: `http://localhost:8080`
 - You can add your own mock data by adding json files.
   - TODO: Wiki link to [How to add mock data]()
+
+### Documentation
+
+- [Naming conventions](./docs/wiki/NAMING.md)
+- [Branch strategy](#)
+- ...
