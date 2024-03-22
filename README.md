@@ -3,7 +3,7 @@
 [![Github backlog](https://img.shields.io/badge/-in_progress-262626.svg?style=for-the-badge&logo=github&logoColor=f2f2f2&label=backlog&labelColor=262626&color=blue)](https://github.com/users/ochairo/projects/5)
 [![GitHub issues](https://img.shields.io/github/issues/ochairo/vanillatte-clean?style=for-the-badge&logo=github&logoColor=f2f2f2&label=issues&labelColor=262626)](https://github.com/ochairo/vanillatte-clean/issues)
 [![Github actions](https://img.shields.io/github/actions/workflow/status/ochairo/vanillatte-clean/main.yml?style=for-the-badge&branch=development&logo=github&logoColor=f2f2f2&label=ci&labelColor=262626)](https://github.com/ochairo/vanillatte-clean/actions/workflows/main.yml)
-[![GitHub codecov](https://img.shields.io/codecov/c/github/ochairo/vanillatte-clean?style=for-the-badge&logo=codecov&logoColor=f2f2f2&label=coverage&labelColor=262626)](#)
+[![GitHub codecov](https://img.shields.io/codecov/c/github/ochairo/vanillatte-clean?style=for-the-badge&logo=codecov&logoColor=f2f2f2&label=coverage&labelColor=262626)](https://github.com/ochairo/vanillatte-clean/tree/development?tab=readme-ov-file#vanillatte-clean)
 
 ## Overview
 
@@ -17,8 +17,8 @@ This is a vanilla-ts spa sample.
 
 ## Architecture
 
-The architecture of this project takes concepts such as<br />
-clean architecture, atomic design and readable code.<br />
+The architecture of this project takes concepts such as  
+clean architecture, atomic design and readable code.  
 It aims to create frontend applications that are easy to understand, maintain and modify.
 
 - Pros:
@@ -77,7 +77,7 @@ It aims to create frontend applications that are easy to understand, maintain an
 
 ## Initial setup
 
-You can choose to use setup shellscript, setup manually or use github codespace.<br />
+You can choose to use setup shellscript, setup manually or use github codespace.  
 [vscode](https://github.com/microsoft/vscode) and [fnm](https://github.com/Schniz/fnm?tab=readme-ov-file#readme) are recommended but not required.
 
 - Shellscript setup
@@ -90,20 +90,19 @@ You can choose to use setup shellscript, setup manually or use github codespace.
 
 - Manually setup
 
-  - TODO: Wiki link to [How to manually setup]()
+  - TODO: Wiki link to [How to manually setup](https://github.com/ochairo/vanillatte-clean/tree/development?tab=readme-ov-file#vanillatte-clean)
 
 - Codespace setup
-  - TODO: Wiki link to [How to create codespace]()
+  - TODO: Wiki link to [How to create codespace](https://github.com/ochairo/vanillatte-clean/tree/development?tab=readme-ov-file#vanillatte-clean)
 
 ## Development
 
 - Start local development with mock data by running: `npm run start:mock`
   - Application will start at: `http://localhost:8080`
 - You can add your own mock data by adding json files.
-  - TODO: Wiki link to [How to add mock data]()
+  - TODO: Wiki link to [How to add mock data](https://github.com/ochairo/vanillatte-clean/tree/development?tab=readme-ov-file#vanillatte-clean)
 
 ### Documentation
 
 - [Naming conventions](./docs/wiki/NAMING.md)
-- [Branch strategy](#)
 - ...

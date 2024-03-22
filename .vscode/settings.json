@@ -67,12 +67,17 @@
     }
   ],
   "cSpell.words": [
+    "codecov",
+    "codespace",
     "datasource",
     "datasources",
+    "lefthook",
+    "ochairo",
+    "shellscripts",
+    "turbopack",
     "usecase",
     "usecases",
-    "vanillatte",
-    "fastify"
+    "vanillatte"
   ],
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": "explicit",
