@@ -1,3 +1,4 @@
+import "@shared/ui-components/atoms/input/input.component";
 import { ShowcaseData } from "@showcase/domain/entities/showcase.entity";
 import GetShowcase from "@showcase/domain/usecases/get-showcase.usecase";
 import style from "@showcase/presentation/showcase.component.css";
@@ -46,6 +47,7 @@ class ShowcaseComponent extends HTMLElement {
             <td>${item.name}</td>
             <td>${item.description}</td>
             <td>${item.price}</td>
+            <td><input-component></input-component></td>
           </tr>
           `
         )
