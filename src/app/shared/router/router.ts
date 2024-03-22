@@ -1,11 +1,11 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 
-type ComponentLoader = () => Promise<{ [key: string]: any }>;
+type ModuleLoader = () => Promise<{ [key: string]: any }>;
 export interface RouteConfig {
   path?: string;
-  moduleLoader?: ComponentLoader;
+  moduleLoader?: ModuleLoader;
   default?: {
-    moduleLoader: ComponentLoader;
+    moduleLoader: ModuleLoader;
   };
 }
 
@@ -22,25 +22,25 @@ const router = async (routes: RouteConfig[], rootElement: HTMLElement) => {
   const defaultRoute = routes.find((route) => route.default);
 
   if (route) {
-    await loadComponent(route.moduleLoader, rootElement);
+    await loadModule(route.moduleLoader, rootElement);
   } else if (defaultRoute && defaultRoute.default) {
-    await loadComponent(defaultRoute.default.moduleLoader, rootElement);
+    await loadModule(defaultRoute.default.moduleLoader, rootElement);
   } else {
     displayNotFound(rootElement);
   }
 };
 
-const loadComponent = async (
-  componentLoader: (() => Promise<{ [key: string]: any }>) | undefined,
+const loadModule = async (
+  moduleLoader: ModuleLoader | undefined,
   rootElement: HTMLElement
 ) => {
-  if (!componentLoader) {
+  if (!moduleLoader) {
     displayError(rootElement);
     return;
   }
 
   try {
-    const componentModule = await componentLoader();
+    const componentModule = await moduleLoader();
     const key = Object.keys(componentModule)[0];
     const Component = componentModule?.[key!];
     clearRootElement(rootElement);
