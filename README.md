@@ -9,6 +9,12 @@
 
 This is a vanilla-ts spa sample.
 
+## Tech stack
+
+- **Web Components**
+- TypeScript
+- Webpack/Turbopack
+
 ## Architecture
 
 The architecture of this project takes concepts such as<br />

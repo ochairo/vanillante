@@ -13,21 +13,13 @@ const showcaseModule = () =>
       "@showcase/presentation/showcase.component"
     ),
   ])
-    .then(
-      ([
-        showcaseDataSourceModule,
-        getShowcaseModule,
-        showcaseComponentModule,
-      ]) => {
-        const showcaseDataSource = new showcaseDataSourceModule.default();
-        const getShowcase = new getShowcaseModule.default(showcaseDataSource);
-        const showcaseComponent = new showcaseComponentModule.default(
-          getShowcase
-        );
+    .then(([ShowcaseDataSource, GetShowcase, ShowcaseComponent]) => {
+      const showcaseDataSource = new ShowcaseDataSource.default();
+      const getShowcase = new GetShowcase.default(showcaseDataSource);
+      const showcaseComponent = new ShowcaseComponent.default(getShowcase);
 
-        return { showcaseComponent };
-      }
-    )
+      return { showcaseComponent };
+    })
     .catch((error) => {
       console.error("Error loading dependencies:", error);
       return Promise.reject(error);

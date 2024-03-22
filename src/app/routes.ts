@@ -5,19 +5,19 @@ import showcaseModule from "@showcase/showcase.module";
 export const routes: RouteConfig[] = [
   {
     path: "/",
-    componentLoader: showcaseModule,
+    moduleLoader: showcaseModule,
   },
   {
     path: "/showcase",
-    componentLoader: showcaseModule,
+    moduleLoader: showcaseModule,
   },
   {
     path: "/error",
-    componentLoader: errorModule,
+    moduleLoader: errorModule,
   },
   {
     default: {
-      componentLoader: errorModule,
+      moduleLoader: errorModule,
     },
   },
 ];

@@ -3,9 +3,9 @@
 type ComponentLoader = () => Promise<{ [key: string]: any }>;
 export interface RouteConfig {
   path?: string;
-  componentLoader?: ComponentLoader;
+  moduleLoader?: ComponentLoader;
   default?: {
-    componentLoader: ComponentLoader;
+    moduleLoader: ComponentLoader;
   };
 }
 
@@ -22,9 +22,9 @@ const router = async (routes: RouteConfig[], rootElement: HTMLElement) => {
   const defaultRoute = routes.find((route) => route.default);
 
   if (route) {
-    await loadComponent(route.componentLoader, rootElement);
+    await loadComponent(route.moduleLoader, rootElement);
   } else if (defaultRoute && defaultRoute.default) {
-    await loadComponent(defaultRoute.default.componentLoader, rootElement);
+    await loadComponent(defaultRoute.default.moduleLoader, rootElement);
   } else {
     displayNotFound(rootElement);
   }

@@ -5,8 +5,8 @@ const errorModule = () =>
       "@error/presentation/error.component"
     ),
   ])
-    .then(([errorComponentModule]) => {
-      const errorComponent = new errorComponentModule.default();
+    .then(([ErrorComponent]) => {
+      const errorComponent = new ErrorComponent.default();
 
       return { errorComponent };
     })
