@@ -1,9 +1,11 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
+
+type ComponentLoader = () => Promise<{ [key: string]: any }>;
 export interface RouteConfig {
   path?: string;
-  componentLoader?: () => Promise<{ [key: string]: any }>;
+  componentLoader?: ComponentLoader;
   default?: {
-    componentLoader: () => Promise<{ [key: string]: any }>;
+    componentLoader: ComponentLoader;
   };
 }
 
