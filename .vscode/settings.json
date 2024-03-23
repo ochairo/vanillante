@@ -77,7 +77,8 @@
     "turbopack",
     "usecase",
     "usecases",
-    "vanillatte"
+    "vanillatte",
+    "vaníllatte"
   ],
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": "explicit",
