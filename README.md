@@ -77,7 +77,7 @@ It aims to create frontend applications that are easy to understand, maintain an
 
 ## Initial setup
 
-You can choose to use setup Shellscript setup, Manually setup or Github codespace setup.  
+You can choose to use Shellscript setup, Manually setup or Github codespace setup.  
 _(Note: [vscode](https://github.com/microsoft/vscode) and [fnm](https://github.com/Schniz/fnm?tab=readme-ov-file#readme) are recommended but not required)_
 
 - Shellscript setup
