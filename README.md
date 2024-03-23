@@ -71,7 +71,7 @@ and can be difficult to understand programming concepts.
         └── unit                      // unit test code
 ```
 
-## Initial setup
+## Onboarding setup
 
 You can choose to use Shellscript setup, Manually setup or Github codespace.  
 _(Note: [vscode](https://github.com/microsoft/vscode) and [fnm](https://github.com/Schniz/fnm?tab=readme-ov-file#readme) are recommended but not required)_
