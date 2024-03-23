@@ -76,18 +76,18 @@ they can also lead to complexity and over-engineering in programming concepts.
 
 You have multiple options for setting up this project:
 
-- **Shellscript Setup:**  
+- **Shellscript setup:**  
   Execute the provided setup script to automate the process.
   Recommended for quick and easy setup.
   ```sh
   ./scripts/onboarding/setup.sh
   ```
-- **Manually Setup:**  
+- **Manually setup:**  
   You can manually set up the project following the steps outlined below.  
   This option provides more control over the setup process.  
   (TODO: [How to manually setup](https://github.com/ochairo/vanillatte/tree/development?tab=readme-ov-file#vanillatte))
 
-- **GitHub Codespace:**  
+- **GitHub codespace:**  
   Utilize GitHub Codespaces for a cloud-based development environment.  
   (TODO: [How to use github codespace](https://github.com/ochairo/vanillatte/tree/development?tab=readme-ov-file#vanillatte))
 
