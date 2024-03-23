@@ -23,7 +23,7 @@ Initial technology stack is simple.
 
 The architecture of this project adopts concepts such as Clean Architecture,  
 SOLID principles, Software Design Patterns, Atomic Design, and Readable Code.  
-These concepts aim to develop applications that are easy to understand, maintain, adapt, and modify.  
+These concepts aim to develop applications that are easy to understand, maintain, adapt, and modify.
 
 However, while these principles make it easier to understand the code,  
 they can also lead to complexity and over-engineering in programming concepts.
@@ -38,7 +38,6 @@ they can also lead to complexity and over-engineering in programming concepts.
 │   └── wiki
 ├── scripts                           // shellscript to automatize
 │   └── onboarding
-│
 └── src
     ├── app
     │   ├── shared
@@ -48,7 +47,6 @@ they can also lead to complexity and over-engineering in programming concepts.
     │   │       ├── atoms
     │   │       ├── molecules
     │   │       └── organisms
-    │   │
     │   ├── features                  // most of the requirements will be developed here
     │   │   └── ${feature name}
     │   │       ├── data
@@ -58,15 +56,12 @@ they can also lead to complexity and over-engineering in programming concepts.
     │   │       │   ├── entities
     │   │       │   └── usecases
     │   │       └── presentation
-    │   │
     │   ├── main.html
     │   ├── main.ts
     │   └── routes.ts
-    │
     ├── mock                          // mock codes
     │   ├── data                      // mock-data for test code and local server
     │   └── server                    // mock-server for local development
-    │
     └── test                          // test codes
         ├── e2e                       // end-to-end test code
         └── unit                      // unit test code
@@ -79,9 +74,11 @@ You have multiple options for setting up this project:
 - **Shellscript setup:**  
   Execute the provided setup script to automate the process.  
   Recommended for quick and easy setup.
+
   ```sh
   ./scripts/onboarding/setup.sh
   ```
+
 - **Manually setup:**  
   You can manually set up the project following the steps outlined below.  
   This option provides more control over the setup process.  
@@ -89,22 +86,26 @@ You have multiple options for setting up this project:
 
 - **GitHub codespace:**  
   Utilize GitHub Codespaces for a cloud-based development environment.  
-  (TODO: [How to use github codespace](https://github.com/ochairo/vanillatte/tree/development?tab=readme-ov-file#vanillatte))
+  (TODO: [How setup github codespace](https://github.com/ochairo/vanillatte/tree/development?tab=readme-ov-file#vanillatte))
 
 ## Development
 
-### Start dev server
+### Local environment
 
 - Start the local development server by executing the following command:
-  
+
   ```sh
   npm run start:mock
   ```
-   
+
   This command will launch the development server,  
   and your application will be accessible at `http://localhost:8080`.
 
-#### Documents:  
+### Docker (TODO)
+
+### GitHub codespace (TODO)
+
+#### Documents
 
 - TODO: [Development flow](https://github.com/ochairo/vanillatte/tree/development?tab=readme-ov-file#vanillatte)
 - TODO: [Naming conventions](./docs/wiki/NAMING_CONVENTIONS.md)
