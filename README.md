@@ -7,7 +7,7 @@
 
 ## Overview
 
-This is a vanilla-ts spa sample.
+This project aims to create a starting point code for vanilla-ts spa projects.
 
 ## Tech stack
 
