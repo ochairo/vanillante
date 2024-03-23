@@ -8,7 +8,7 @@
 ## Overview
 
 This is a starting point project for single page application.  
-It aims to be adaptable, modifiable, maintainable, framework agnostic,  
+It's designed to be adaptable, modifiable, maintainable, framework agnostic,  
 but at the same time open to adapting frameworks and libraries.
 
 ## Tech stack
