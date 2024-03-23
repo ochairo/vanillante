@@ -97,11 +97,10 @@ You can choose to use setup shellscript, setup manually or use github codespace.
 
 - Start local development with mock data by running: `npm run start:mock`
   - Application will start at: `http://localhost:8080`
-- You can add your own mock data by adding json files.
-  - TODO: Wiki link to [How to add mock data](https://github.com/ochairo/vanillatte-clean/tree/development?tab=readme-ov-file#vanillatte-clean)
+- [How to add mock data](https://github.com/ochairo/vanillatte-clean/tree/development?tab=readme-ov-file#vanillatte-clean)
+- [Naming conventions](./docs/wiki/NAMING_CONVENTIONS.md)
 
 ### Documentation
 
 - TODO: [Development rules for managers and developers to continue developing apps with peace of mind](https://github.com/ochairo/vanillatte-clean/tree/development?tab=readme-ov-file#vanillatte-clean)
-- [Naming conventions](./docs/wiki/NAMING_CONVENTIONS.md)
 - ...
