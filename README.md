@@ -8,8 +8,8 @@
 ## Overview
 
 This is a starting point project for single page application.  
-It's designed to be adaptable, modifiable, maintainable, framework agnostic,  
-but at the same time open to adapting frameworks and libraries.
+It's designed to be adaptable, modifiable, maintainable.
+It's framework-agnostic but at the same time open to adapting frameworks and libraries.
 
 ## Tech stack
 
@@ -23,7 +23,7 @@ Initial tech stack is simple.
 
 The architecture of this project takes concepts such as Clean Architecture,  
 SOLID priciples, Software Design Patterns, Atomic Design and Readable Code.  
-These concepts aims to create applications that are easy to understand, maintain, and modify.
+These concepts aim to develop applications that are easy to understand, maintain, and modify.
 
 On the other hand, it can be over-engineering for small projects  
 and can be difficult to understand programming concepts.
