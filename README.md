@@ -21,7 +21,7 @@ Initial technology stack is simple.
 
 ## Architecture
 
-The architecture of this project incorporates principles such as Clean Architecture,  
+The architecture of this project adopts concepts such as Clean Architecture,  
 SOLID principles, Software Design Patterns, Atomic Design, and Readable Code.  
 These concepts aim to develop applications that are easy to understand, maintain, adapt, and modify.  
 
