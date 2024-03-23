@@ -82,11 +82,11 @@ You have multiple options for setting up this project:
 - **Manually setup:**  
   You can manually set up the project following the steps outlined below.  
   This option provides more control over the setup process.  
-  - TODO: [How to manually setup](https://github.com/ochairo/vanillatte/tree/development?tab=readme-ov-file#vanillatte))
+  - TODO: [How to manually setup](https://github.com/ochairo/vanillatte/tree/development?tab=readme-ov-file#vanillatte)
 
 - **Github codespace setup:**  
   Utilize github codespaces for a cloud-based development environment.  
-  - TODO: [How setup github codespace](https://github.com/ochairo/vanillatte/tree/development?tab=readme-ov-file#vanillatte))
+  - TODO: [How setup github codespace](https://github.com/ochairo/vanillatte/tree/development?tab=readme-ov-file#vanillatte)
 
 ## Development
 
