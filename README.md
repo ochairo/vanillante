@@ -25,7 +25,8 @@ The architecture of this project adopts concepts such as Clean Architecture,
 SOLID principles, Software Design Patterns, Atomic Design, and Readable Code.  
 These concepts aim to develop applications that are easy to understand, maintain, adapt, and modify.
 
-However, while these concepts make it easier to understand the code, the concepts themselves are complex and hard to understand.
+However, while these concepts make it easier to understand the code,  
+the concepts themselves are complex and hard to understand.
 
 ![architecture](./docs/images/architecture.png)
 
