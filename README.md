@@ -73,19 +73,19 @@ and can be difficult to understand programming concepts.
 
 ## Initial setup
 
-You can choose to use Shellscript setup, Manually setup or Github codespace setup.  
+You can choose to use Shellscript setup, Manually setup or Github codespace.  
 _(Note: [vscode](https://github.com/microsoft/vscode) and [fnm](https://github.com/Schniz/fnm?tab=readme-ov-file#readme) are recommended but not required)_
 
 - Shellscript setup
   - Just execute `./scripts/setup/init.sh`
 - Manually setup
   - TODO: [How to manually setup](https://github.com/ochairo/vanillatte/tree/development?tab=readme-ov-file#vanillatte)
-- Github codespace setup
+- Github codespace
   - TODO: [How to create codespace](https://github.com/ochairo/vanillatte/tree/development?tab=readme-ov-file#vanillatte)
 
 ## Development
 
-- Start local development with mock data by running `npm run start:mock`  
+- Start local development by running `npm run start:mock`  
   Application will start at: `http://localhost:8080`  
 - TODO: [Development flow](https://github.com/ochairo/vanillatte/tree/development?tab=readme-ov-file#vanillatte)
 - TODO: [Naming conventions](./docs/wiki/NAMING_CONVENTIONS.md)
