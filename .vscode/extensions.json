@@ -1,3 +1,7 @@
+/**
+ * This file is used to list all extensions that are recommended.
+ * If you know a beter one, please make a PR to update/upgrade it.
+ */
 {
   "recommendations": [
     "aaron-bond.better-comments",
@@ -17,5 +21,6 @@
     "dbaeumer.vscode-eslint",
     "DavidAnson.vscode-markdownlint",
     "hediet.vscode-drawio",
+    "wayou.vscode-todo-highlight"
   ]
 }

@@ -1,12 +1,12 @@
-/* eslint-disable @typescript-eslint/no-explicit-any */
-
+// FIXME: any
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
 type ModuleLoader = () => Promise<{ [key: string]: any }>;
 export interface RouteConfig {
   path?: string;
   moduleLoader?: ModuleLoader;
-  default?: {
-    moduleLoader: ModuleLoader;
-  };
+  /** TODO: children */
+  children?: RouteConfig;
+  default?: { moduleLoader: ModuleLoader };
 }
 
 export const setRoutes = (routes: RouteConfig[], rootElement: HTMLElement) => {

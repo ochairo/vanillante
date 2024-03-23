@@ -28,7 +28,7 @@ It aims to create frontend applications that are easy to understand, maintain an
   - Makes easier the code review process.
   - Makes easier to understand the code.
 - Cons:
-  - Makes harder to understand the programing concepts.
+  - Makes harder to understand the programming concepts.
   - Can be over-engineering for small projects.
   - It is not focused on performance.
 
@@ -89,9 +89,7 @@ You can choose to use setup shellscript, setup manually or use github codespace.
     ```
 
 - Manually setup
-
   - TODO: Wiki link to [How to manually setup](https://github.com/ochairo/vanillatte-clean/tree/development?tab=readme-ov-file#vanillatte-clean)
-
 - Codespace setup
   - TODO: Wiki link to [How to create codespace](https://github.com/ochairo/vanillatte-clean/tree/development?tab=readme-ov-file#vanillatte-clean)
 
@@ -104,5 +102,5 @@ You can choose to use setup shellscript, setup manually or use github codespace.
 
 ### Documentation
 
-- [Naming conventions](./docs/wiki/NAMING.md)
+- [Naming conventions](./docs/wiki/NAMING_CONVENTIONS.md)
 - ...
