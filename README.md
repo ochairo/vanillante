@@ -11,6 +11,8 @@ This is a vanilla-ts spa sample.
 
 ## Tech stack
 
+The simplest technology stack.
+
 - [Web Components](https://developer.mozilla.org/en-US/docs/Web/API/Web_Components)
 - [Webpack](https://webpack.js.org/) / [Turbopack](https://turbo.build/pack)
 - HTML, CSS, TypeScript
