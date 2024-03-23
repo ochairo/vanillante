@@ -16,7 +16,7 @@ It's framework-agnostic but at the same time open to adapting frameworks and lib
 Initial technology stack is simple.
 
 - [Web Components](https://developer.mozilla.org/en-US/docs/Web/API/Web_Components)
-- [Webpack](https://webpack.js.org/) / [Turbopack](https://turbo.build/pack)
+- [Webpack](https://webpack.js.org/) / (waiting for [Turbopack](https://turbo.build/pack))
 - HTML, CSS, TypeScript
 
 ## Architecture
