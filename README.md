@@ -9,7 +9,7 @@
 
 This is a seed project for vanilla single page application.  
 It's designed to be understandable, maintainable, adaptable, and modifiable.  
-It's framework-agnostic but at the same time open to adapting frameworks and libraries.
+It's framework-agnostic but open to adapting frameworks and libraries.
 
 ## Technology stack
 
