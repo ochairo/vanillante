@@ -100,7 +100,7 @@ You can choose to use setup shellscript, setup manually or use github codespace.
 - TODO: [How to add mock data](https://github.com/ochairo/vanillatte-clean/tree/development?tab=readme-ov-file#vanillatte-clean)
 - TODO: [Naming conventions](./docs/wiki/NAMING_CONVENTIONS.md)
 
-### Documentation
+### Other documentations
 
 - TODO: [Development rules for managers and developers to continue developing apps with peace of mind](https://github.com/ochairo/vanillatte-clean/tree/development?tab=readme-ov-file#vanillatte-clean)
 - ...
