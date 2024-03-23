@@ -7,7 +7,9 @@
 
 ## Overview
 
-This project aims to create a starting point code for vanilla or non-vanilla spa projects.
+This is a starting point project for single page applications.  
+It aims to be adaptable, modifiable, framework agnostic,  
+but at the same time open to adapting frameworks and libraries.
 
 ## Tech stack
 
