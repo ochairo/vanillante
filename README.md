@@ -7,7 +7,7 @@
 
 ## Overview
 
-This is a seed project for single page application.  
+This is a seed project for vanilla single page application.  
 It's designed to be adaptable, modifiable and maintainable.  
 It's framework-agnostic but at the same time open to adapting frameworks and libraries.
 
