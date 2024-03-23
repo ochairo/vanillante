@@ -8,7 +8,7 @@
 ## Overview
 
 This is a seed project for vanilla single page application.  
-It's designed to be adaptable, modifiable and maintainable.  
+It's designed to be understandable, maintainable, adaptable, and modifiable.  
 It's framework-agnostic but at the same time open to adapting frameworks and libraries.
 
 ## Technology stack
@@ -21,12 +21,12 @@ Initial technology stack is simple.
 
 ## Architecture
 
-The architecture of this project takes concepts such as Clean Architecture,  
-SOLID principles, Software Design Patterns, Atomic Design and Readable Code.  
-These concepts aim to develop applications that are easy to understand, maintain, and modify.
+The architecture of this project incorporates principles such as Clean Architecture,  
+SOLID principles, Software Design Patterns, Atomic Design, and Readable Code.  
+These concepts aim to develop applications that are easy to understand, maintain, adapt, and modify.  
 
-On the other hand, it can be over-engineering for small projects  
-and can be difficult to understand programming concepts.
+However, while these principles make it easier to understand the code,  
+they can also lead to complexity and over-engineering in programming concepts.
 
 ![architecture](./docs/images/architecture.png)
 
