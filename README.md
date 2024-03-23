@@ -27,7 +27,7 @@ It aims to create frontend applications that are easy to understand, maintain an
   - Reduce user requirements bugs and programming bugs.
   - Makes easier the code review process.
   - Makes easier to understand the code.
-  - Can replace the implementation to a library.
+  - Can replace the implementation to a library or convert the implementation to a library.
 - Cons:
   - Makes harder to understand the programming concepts.
   - Can be over-engineering for small projects.
