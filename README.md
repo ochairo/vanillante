@@ -8,12 +8,12 @@
 ## Overview
 
 This is a starting point project for single page applications.  
-It aims to be adaptable, modifiable, framework agnostic,  
+It aims to be adaptable, modifiable, maintainable, framework agnostic,  
 but at the same time open to adapting frameworks and libraries.
 
 ## Tech stack
 
-The simplest technology stack.
+Initial tech stack is simple.
 
 - [Web Components](https://developer.mozilla.org/en-US/docs/Web/API/Web_Components)
 - [Webpack](https://webpack.js.org/) / [Turbopack](https://turbo.build/pack)
