@@ -75,7 +75,7 @@ You can choose to use Shellscript setup, Manually setup or Github codespace setu
 _(Note: [vscode](https://github.com/microsoft/vscode) and [fnm](https://github.com/Schniz/fnm?tab=readme-ov-file#readme) are recommended but not required)_
 
 - Shellscript setup
-  - Execute `./scripts/setup/init.sh`
+  - Just execute `./scripts/setup/init.sh`
 - Manually setup
   - TODO: [How to manually setup](https://github.com/ochairo/vanillatte-clean/tree/development?tab=readme-ov-file#vanillatte-clean)
 - Github codespace setup
