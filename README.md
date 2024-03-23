@@ -26,7 +26,7 @@ SOLID principles, Software Design Patterns, Atomic Design, and Readable Code.
 These concepts aim to develop applications that are easy to understand, maintain, adapt, and modify.
 
 However, while these concepts make it easier to understand the code,  
-the concepts it self are complex and can become over-engineering.
+the concepts themselves are complex and can become over-engineering.
 
 ![architecture](./docs/images/architecture.png)
 
