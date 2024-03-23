@@ -77,7 +77,7 @@ they can also lead to complexity and over-engineering in programming concepts.
 You have multiple options for setting up this project:
 
 - **Shellscript setup:**  
-  Execute the provided setup script to automate the process.
+  Execute the provided setup script to automate the process.  
   Recommended for quick and easy setup.
   ```sh
   ./scripts/onboarding/setup.sh
