@@ -84,7 +84,7 @@ You have multiple options for setting up this project:
   This option provides more control over the setup process.  
   (TODO: [How to manually setup](https://github.com/ochairo/vanillatte/tree/development?tab=readme-ov-file#vanillatte))
 
-- **GitHub codespace:**  
+- **GitHub codespace setup:**  
   Utilize GitHub Codespaces for a cloud-based development environment.  
   (TODO: [How setup github codespace](https://github.com/ochairo/vanillatte/tree/development?tab=readme-ov-file#vanillatte))
 
