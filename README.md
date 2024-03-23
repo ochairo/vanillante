@@ -15,9 +15,9 @@ It's framework-agnostic but open to adapting frameworks and libraries.
 
 Initial technology stack is simple.
 
-- [Web Components](https://developer.mozilla.org/en-US/docs/Web/API/Web_Components): browser-native api for building reusable components.
-- [Webpack](https://webpack.js.org/): javascript bundler for the browser.
-- [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML), [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS), [TypeScript](https://www.typescriptlang.org/): core technologies for web development.
+- [Web Components](https://developer.mozilla.org/en-US/docs/Web/API/Web_Components): Browser-native API for building reusable components.
+- [Webpack](https://webpack.js.org/): JavaScript bundler for the browser.
+- [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML), [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS), [TypeScript](https://www.typescriptlang.org/): Core technologies for web development.
 
 ## Architecture
 
