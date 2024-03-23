@@ -11,9 +11,9 @@ This is a starting point project for single page application.
 It's designed to be adaptable, modifiable and maintainable.  
 It's framework-agnostic but at the same time open to adapting frameworks and libraries.
 
-## Tech stack
+## Technology stack
 
-Initial tech stack is simple.
+Initial technology stack is simple.
 
 - [Web Components](https://developer.mozilla.org/en-US/docs/Web/API/Web_Components)
 - [Webpack](https://webpack.js.org/) / [Turbopack](https://turbo.build/pack)
