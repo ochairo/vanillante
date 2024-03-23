@@ -91,6 +91,8 @@ You have multiple options for setting up this project:
 
 ## Development
 
+You have multiple options for development.
+
 ### Local environment
 
 - Start the local development server by executing the following command:
