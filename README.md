@@ -16,7 +16,7 @@ It's framework-agnostic but open to adapting frameworks and libraries.
 Initial technology stack is simple.
 
 - [Web Components](https://developer.mozilla.org/en-US/docs/Web/API/Web_Components)
-- [Webpack](https://webpack.js.org/) / (waiting for [Turbopack](https://turbo.build/pack))
+- [Webpack](https://webpack.js.org/)
 - HTML, CSS, TypeScript
 
 ## Architecture
@@ -74,20 +74,39 @@ they can also lead to complexity and over-engineering in programming concepts.
 
 ## Onboarding setup
 
-You can choose to use Shellscript setup, Manually setup or use Github codespace.  
-_(Note: [vscode](https://github.com/microsoft/vscode) and [fnm](https://github.com/Schniz/fnm?tab=readme-ov-file#readme) are recommended but not required)_
+You have multiple options for setting up this project:
 
-- Shellscript setup
-  - Just execute `./scripts/onboarding/setup.sh`
-- Manually setup
-  - TODO: [How to manually setup](https://github.com/ochairo/vanillatte/tree/development?tab=readme-ov-file#vanillatte)
-- Github codespace
-  - TODO: [How to use github codespace](https://github.com/ochairo/vanillatte/tree/development?tab=readme-ov-file#vanillatte)
+- **Shellscript Setup:**  
+  Execute the provided setup script to automate the process.
+  Recommended for quick and easy setup.
+  ```sh
+  ./scripts/onboarding/setup.sh
+  ```
+- **Manually Setup:**  
+  You can manually set up the project following the steps outlined below.  
+  This option provides more control over the setup process.  
+  (TODO: [How to manually setup](https://github.com/ochairo/vanillatte/tree/development?tab=readme-ov-file#vanillatte))
+
+- **GitHub Codespace:**  
+  Utilize GitHub Codespaces for a cloud-based development environment.  
+  (TODO: [How to use github codespace](https://github.com/ochairo/vanillatte/tree/development?tab=readme-ov-file#vanillatte))
 
 ## Development
 
-- Start local development by running `npm run start:mock`  
-  Application will start at: `http://localhost:8080`
+### Start dev server
+
+- Start the local development server by executing the following command:
+  
+  ```sh
+  npm run start:mock
+  ```
+   
+  This command will launch the development server,  
+  and your application will be accessible at `http://localhost:8080`.
+
+#### Documents:  
+
 - TODO: [Development flow](https://github.com/ochairo/vanillatte/tree/development?tab=readme-ov-file#vanillatte)
 - TODO: [Naming conventions](./docs/wiki/NAMING_CONVENTIONS.md)
-- ...
+- TODO: [Commit rules](https://github.com/ochairo/vanillatte/tree/development?tab=readme-ov-file#vanillatte)
+- TODO: [Branch strategy](https://github.com/ochairo/vanillatte/tree/development?tab=readme-ov-file#vanillatte)
