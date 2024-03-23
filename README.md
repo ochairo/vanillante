@@ -73,7 +73,7 @@ and can be difficult to understand programming concepts.
 
 ## Onboarding setup
 
-You can choose to use Shellscript setup, Manually setup or Github codespace.  
+You can choose to use Shellscript setup, Manually setup or use Github codespace.  
 _(Note: [vscode](https://github.com/microsoft/vscode) and [fnm](https://github.com/Schniz/fnm?tab=readme-ov-file#readme) are recommended but not required)_
 
 - Shellscript setup
@@ -81,7 +81,7 @@ _(Note: [vscode](https://github.com/microsoft/vscode) and [fnm](https://github.c
 - Manually setup
   - TODO: [How to manually setup](https://github.com/ochairo/vanillatte/tree/development?tab=readme-ov-file#vanillatte)
 - Github codespace
-  - TODO: [How to create codespace](https://github.com/ochairo/vanillatte/tree/development?tab=readme-ov-file#vanillatte)
+  - TODO: [How to use github codespace](https://github.com/ochairo/vanillatte/tree/development?tab=readme-ov-file#vanillatte)
 
 ## Development
 
