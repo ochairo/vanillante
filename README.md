@@ -84,8 +84,8 @@ You have multiple options for setting up this project:
   This option provides more control over the setup process.  
   (TODO: [How to manually setup](https://github.com/ochairo/vanillatte/tree/development?tab=readme-ov-file#vanillatte))
 
-- **GitHub codespace setup:**  
-  Utilize GitHub Codespaces for a cloud-based development environment.  
+- **Github codespace setup:**  
+  Utilize github codespaces for a cloud-based development environment.  
   (TODO: [How setup github codespace](https://github.com/ochairo/vanillatte/tree/development?tab=readme-ov-file#vanillatte))
 
 ## Development
@@ -101,9 +101,9 @@ You have multiple options for setting up this project:
   This command will launch the development server,  
   and your application will be accessible at `http://localhost:8080`.
 
-### Docker (TODO)
+### Local docker environment (TODO)
 
-### GitHub codespace (TODO)
+### Github codespace (TODO)
 
 #### Documents
 
