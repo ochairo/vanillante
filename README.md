@@ -2,7 +2,7 @@
 
 [![Github backlog](https://img.shields.io/badge/-in_progress-262626.svg?style=for-the-badge&logo=github&logoColor=f2f2f2&label=backlog&labelColor=262626&color=blue)](https://github.com/users/ochairo/projects/5)
 [![GitHub issues](https://img.shields.io/github/issues/ochairo/vanillatte-clean?style=for-the-badge&logo=github&logoColor=f2f2f2&label=issues&labelColor=262626)](https://github.com/ochairo/vanillatte-clean/issues)
-[![Github actions](https://img.shields.io/github/actions/workflow/status/ochairo/vanillatte-clean/main.yml?style=for-the-badge&branch=development&logo=github&logoColor=f2f2f2&label=ci&labelColor=262626)](https://github.com/ochairo/vanillatte-clean/actions/workflows/main.yml)
+[![Github actions](https://img.shields.io/github/actions/workflow/status/ochairo/vanillatte-clean/main.yml?style=for-the-badge&branch=development&logo=github&logoColor=f2f2f2&label=TODO:ci&labelColor=262626)](https://github.com/ochairo/vanillatte-clean/actions/workflows/main.yml)
 [![GitHub codecov](https://img.shields.io/codecov/c/github/ochairo/vanillatte-clean?style=for-the-badge&logo=codecov&logoColor=f2f2f2&label=TODO:coverage&labelColor=262626)](https://github.com/ochairo/vanillatte-clean/tree/development?tab=readme-ov-file#vanillatte-clean)
 
 ## Overview
