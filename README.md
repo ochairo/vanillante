@@ -104,5 +104,6 @@ _(Note: [vscode](https://github.com/microsoft/vscode) and [fnm](https://github.c
 
 ### Other documentations
 
+- [The Culture of Code Refactoring](https://ochairo.hashnode.dev/the-culture-of-code-refactoring)
 - TODO: [Development rules for managers and developers to continue developing apps with peace of mind](https://github.com/ochairo/vanillatte-clean/tree/development?tab=readme-ov-file#vanillatte-clean)
 - ...
