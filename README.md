@@ -99,6 +99,7 @@ _(Note: [vscode](https://github.com/microsoft/vscode) and [fnm](https://github.c
 
 - Start local development with mock data by running: `npm run start:mock`
   - Application will start at: `http://localhost:8080`
+- TODO: [Development flow in this project](https://github.com/ochairo/vanillatte-clean/tree/development?tab=readme-ov-file#vanillatte-clean)
 - TODO: [How to add mock data](https://github.com/ochairo/vanillatte-clean/tree/development?tab=readme-ov-file#vanillatte-clean)
 - TODO: [Naming conventions](./docs/wiki/NAMING_CONVENTIONS.md)
 
