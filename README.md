@@ -12,7 +12,6 @@ This is a vanilla-ts spa sample.
 ## Tech stack
 
 - [**Web Components**](https://developer.mozilla.org/en-US/docs/Web/API/Web_Components)
-- [TypeScript](https://www.typescriptlang.org/)
 - [Webpack](https://webpack.js.org/) / [Turbopack](https://turbo.build/pack)
 
 ## Architecture
