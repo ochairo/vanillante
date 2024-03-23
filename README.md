@@ -89,9 +89,4 @@ _(Note: [vscode](https://github.com/microsoft/vscode) and [fnm](https://github.c
   Application will start at: `http://localhost:8080`  
 - TODO: [Development flow](https://github.com/ochairo/vanillatte/tree/development?tab=readme-ov-file#vanillatte)
 - TODO: [Naming conventions](./docs/wiki/NAMING_CONVENTIONS.md)
-
-### Other documentations
-
-- [The Culture of Code Refactoring](https://ochairo.hashnode.dev/the-culture-of-code-refactoring)
-- TODO: [Development rules for managers and developers to continue developing apps with peace of mind](https://github.com/ochairo/vanillatte/tree/development?tab=readme-ov-file#vanillatte)
 - ...
