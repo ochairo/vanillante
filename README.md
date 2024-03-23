@@ -19,20 +19,12 @@ The simplest technology stack.
 
 ## Architecture
 
-The architecture of this project takes concepts such as  
-clean architecture, atomic design and readable code.  
-It aims to create frontend applications that are easy to understand, maintain and modify.
+The architecture of this project takes concepts such as Clean Architecture,  
+SOLID priciples, Software Design Patterns, Atomic Design and Readable Code.  
+These concepts aims to create applications that are easy to understand, maintain, and modify.
 
-- Pros:
-  - Improve code maintainability and adaptability.
-  - Leads to a good implementation of user requirements.
-  - Reduce user requirements bugs and programming bugs.
-  - Makes easier the code review process.
-  - Makes easier to understand the code.
-- Cons:
-  - Makes harder to understand the programming concepts.
-  - Can be over-engineering for small projects.
-  - It is not focused on performance.
+On the other hand, it can be over-engineering for small projects  
+and can be difficult to understand programming concepts.
 
 ![architecture](./docs/images/architecture.png)
 
