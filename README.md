@@ -7,7 +7,7 @@
 
 ## Overview
 
-This project aims to create a starting point code for vanilla-ts spa projects.
+This project aims to create a starting point code for vanilla or non-vanilla spa projects.
 
 ## Tech stack
 
