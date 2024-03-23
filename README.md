@@ -43,6 +43,7 @@ and can be difficult to understand programming concepts.
     ├── app
     │   ├── shared
     │   │   ├── router
+    │   │   ├── styles
     │   │   └── ui-components
     │   │       ├── atoms
     │   │       ├── molecules
