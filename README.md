@@ -90,7 +90,7 @@ You can choose to use setup shellscript, setup manually or use github codespace.
 
 - Manually setup
   - TODO: [How to manually setup](https://github.com/ochairo/vanillatte-clean/tree/development?tab=readme-ov-file#vanillatte-clean)
-- Codespace setup
+- Github codespace setup
   - TODO: [How to create codespace](https://github.com/ochairo/vanillatte-clean/tree/development?tab=readme-ov-file#vanillatte-clean)
 
 ## Development
