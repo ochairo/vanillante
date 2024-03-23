@@ -47,7 +47,7 @@ class ShowcaseComponent extends HTMLElement {
             <td>${item.name}</td>
             <td>${item.description}</td>
             <td>${item.price}</td>
-            <td><input-component></input-component></td>
+            <td><input-component override-style="input {color: blue;}"></input-component></td>
           </tr>
           `
         )
