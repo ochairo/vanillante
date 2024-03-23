@@ -3,6 +3,7 @@
 SETUPS=(
   "$PATH_SETTINGS/vscode.sh"
   "$PATH_SETTINGS/node.sh"
+  "$PATH_SETTINGS/docker.sh"
 )
 
 for SETUP in "${SETUPS[@]}"; do
