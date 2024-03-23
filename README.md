@@ -82,13 +82,7 @@ You can choose to use Shellscript setup, Manually setup or Github codespace setu
 _(Note: [vscode](https://github.com/microsoft/vscode) and [fnm](https://github.com/Schniz/fnm?tab=readme-ov-file#readme) are recommended but not required)_
 
 - Shellscript setup
-
-  - Execute `init.sh`
-
-    ```bash
-    ./scripts/setup/init.sh
-    ```
-
+  - Execute `./scripts/setup/init.sh`
 - Manually setup
   - TODO: [How to manually setup](https://github.com/ochairo/vanillatte-clean/tree/development?tab=readme-ov-file#vanillatte-clean)
 - Github codespace setup
@@ -96,10 +90,10 @@ _(Note: [vscode](https://github.com/microsoft/vscode) and [fnm](https://github.c
 
 ## Development
 
-- Start local development with mock data by running: `npm run start:mock`
-  - Application will start at: `http://localhost:8080`
-- TODO: [Development flow](https://github.com/ochairo/vanillatte-clean/tree/development?tab=readme-ov-file#vanillatte-clean)
-- TODO: [Naming conventions](./docs/wiki/NAMING_CONVENTIONS.md)
+- Start local development with mock data by running `npm run start:mock`  
+  Application will start at: `http://localhost:8080`  
+- [Development flow](https://github.com/ochairo/vanillatte-clean/tree/development?tab=readme-ov-file#vanillatte-clean)
+- [Naming conventions](./docs/wiki/NAMING_CONVENTIONS.md)
 
 ### Other documentations
 
