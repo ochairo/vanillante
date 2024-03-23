@@ -37,7 +37,7 @@ and can be difficult to understand programming concepts.
 │   ├── images
 │   └── wiki
 ├── scripts                           // shellscript to automatize
-│   └── setup
+│   └── onboarding
 │
 └── src
     ├── app
@@ -78,7 +78,7 @@ You can choose to use Shellscript setup, Manually setup or use Github codespace.
 _(Note: [vscode](https://github.com/microsoft/vscode) and [fnm](https://github.com/Schniz/fnm?tab=readme-ov-file#readme) are recommended but not required)_
 
 - Shellscript setup
-  - Just execute `./scripts/setup/init.sh`
+  - Just execute `./scripts/onboarding/setup.sh`
 - Manually setup
   - TODO: [How to manually setup](https://github.com/ochairo/vanillatte/tree/development?tab=readme-ov-file#vanillatte)
 - Github codespace
@@ -87,7 +87,7 @@ _(Note: [vscode](https://github.com/microsoft/vscode) and [fnm](https://github.c
 ## Development
 
 - Start local development by running `npm run start:mock`  
-  Application will start at: `http://localhost:8080`  
+  Application will start at: `http://localhost:8080`
 - TODO: [Development flow](https://github.com/ochairo/vanillatte/tree/development?tab=readme-ov-file#vanillatte)
 - TODO: [Naming conventions](./docs/wiki/NAMING_CONVENTIONS.md)
 - ...

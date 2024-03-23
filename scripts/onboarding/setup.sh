@@ -1,23 +1,35 @@
 #!/bin/bash -eu
 
-SETUPS=(
-  "$PATH_SETTINGS/vscode.sh"
-  "$PATH_SETTINGS/node.sh"
-)
+# Clear the terminal ----------------------------------------------------------
+clear
 
-for SETUP in "${SETUPS[@]}"; do
-  echo ""
-  echo "${COLOR_BLUE}Running.........................................................................${COLOR_DEFAULT}"
-  echo " .${SETUP//$PATH_ROOT/}"
-  echo ""
+# VARIABLES: Colors -----------------------------------------------------------
+COLOR_BLUE=$(tput setaf 4)
+COLOR_GRAY=$(tput setaf 8)
+COLOR_GREEN=$(tput setaf 2)
+COLOR_RED=$(tput setaf 1)
+COLOR_DEFAULT=$(tput sgr0)
 
-  source $SETUP
+# VARIABLES: Paths ------------------------------------------------------------
+PATH_ROOT=$(pwd)
+PATH_HANDLERS=$PATH_ROOT/handlers
+PATH_MESSAGES=$PATH_ROOT/messages
+PATH_SETTINGS=$PATH_ROOT/settings
 
-  if [ $? -ne 0 ]; then
-    handle_error "Error running .${SETUP//$PATH_ROOT/}"
-  else
-    echo "${COLOR_GREEN}........................................................................Complete${COLOR_DEFAULT}"
-    echo ""
-    echo ""
-  fi
-done
+# HANDLERS --------------------------------------------------------------------
+source $PATH_HANDLERS/error.sh
+source $PATH_HANDLERS/question.sh
+
+# MESSAGE: Welcome ------------------------------------------------------------
+source $PATH_MESSAGES/welcome.sh
+
+# Prepare ---------------------------------------------------------------------
+source $PATH_ROOT/prepare.sh
+
+# Settings --------------------------------------------------------------------
+source $PATH_ROOT/setting.sh
+
+# MESSAGE: Complete -----------------------------------------------------------
+source $PATH_MESSAGES/complete.sh
+
+exit 0
