@@ -34,10 +34,11 @@ the concepts themselves are complex and hard to understand.
 
 ```sh
 ├── docs                              # Documentation files
-│   ├── images                        # - Image resources
+│   ├── images                        # - Images for documents
 │   └── wiki                          # - Wiki pages
 │
 ├── scripts                           # Shell scripts
+│   ├── deployment                    # - Deployment scripts
 │   └── onboarding                    # - Onboarding scripts
 │
 └── src
@@ -60,13 +61,10 @@ the concepts themselves are complex and hard to understand.
     │   ├── main.ts                   # - Main TypeScript file
     │   └── routes.ts                 # - Routing configuration
     │
-    ├── mock                          # Mock data and server
-    │   ├── data                      # - Mock data files
-    │   └── server                    # - Mock server files
-    │
-    └── test                          # Test files
-        ├── e2e                       # - End-to-end tests
-        └── unit                      # - Unit tests
+    └── mock                          # Mock data, server and test code
+        ├── data                      # - Mock data files
+        ├── server                    # - Mock server files
+        └── test                      # - Test codes that use mock data
 ```
 
 ## Onboarding setup
