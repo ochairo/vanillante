@@ -45,8 +45,8 @@ the concepts themselves are complex and hard to understand.
 ├── src
 │   ├── app                           # Application code
 │   │   ├── shared                    # - Shared components and utilities
-│   │   │   ├── router                # - Router configurations
-│   │   │   ├── styles                # - Shared stylesheets
+│   │   │   ├── router                # - Router
+│   │   │   ├── styles                # - Stylesheets
 │   │   │   └── ui-components         # - Reusable UI components
 │   │   │       ├── atoms             # - Basic UI elements
 │   │   │       ├── molecules         # - Simple component compositions
