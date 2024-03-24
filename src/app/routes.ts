@@ -3,7 +3,7 @@ import showcaseModule from "@showcase/showcase.module";
 import { RouteConfig } from "./core/router/interfaces";
 
 // LazyLoad feature modules
-export const routeConfigs: RouteConfig[] = [
+export const routesConfig: RouteConfig[] = [
   {
     path: "/",
     moduleLoader: showcaseModule,
