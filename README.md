@@ -42,30 +42,33 @@ the concepts themselves are complex and hard to understand.
 │   ├── deployment                    # - Deployment tasks
 │   └── utilities                     # - Utility scripts
 │
-└── src
-    ├── app                           # Application code
-    │   ├── shared                    # - Shared components and utilities
-    │   │   ├── router                # - Router configurations
-    │   │   ├── styles                # - Shared stylesheets
-    │   │   └── ui-components         # - Reusable UI components
-    │   │       ├── atoms             # - Basic UI elements
-    │   │       ├── molecules         # - Simple component compositions
-    │   │       └── organisms         # - Complex UI components
-    │   ├── features                  # - Feature-specific code
-    │   │   └── ${feature name}       # - Individual features
-    │   │       ├── data              # - Data-related modules
-    │   │       │   ├── datasources   # - Data sources
-    │   │       │   └── repositories  # - Data repositories
-    │   │       ├── domain            # - Domain logic
-    │   │       └── presentation      # - Presentation components
-    │   ├── main.html                 # - Main HTML file
-    │   ├── main.ts                   # - Main TypeScript file
-    │   └── routes.ts                 # - Routing configuration
-    │
-    └── mock                          # Mock data, server and test
-        ├── data                      # - Mock json data files
-        ├── server                    # - Mock api server that use mock data
-        └── test                      # - Test codes that use mock data
+├── src
+│   ├── app                           # Application code
+│   │   ├── shared                    # - Shared components and utilities
+│   │   │   ├── router                # - Router configurations
+│   │   │   ├── styles                # - Shared stylesheets
+│   │   │   └── ui-components         # - Reusable UI components
+│   │   │       ├── atoms             # - Basic UI elements
+│   │   │       ├── molecules         # - Simple component compositions
+│   │   │       └── organisms         # - Complex UI components
+│   │   ├── features                  # - Feature-specific code
+│   │   │   └── ${feature name}       # - Individual features
+│   │   │       ├── data              # - Data-related modules
+│   │   │       │   ├── datasources   # - Data sources
+│   │   │       │   └── repositories  # - Data repositories
+│   │   │       ├── domain            # - Domain logic
+│   │   │       └── presentation      # - Presentation components
+│   │   ├── main.html                 # - Main HTML file
+│   │   ├── main.ts                   # - Main TypeScript file
+│   │   └── routes.ts                 # - Routing configuration
+│   │
+│   └── mock                          # Mock data, server and test
+│       ├── data                      # - Mock json data files
+│       ├── server                    # - Mock api server that use mock data
+│       └── test                      # - Test codes that use mock data
+│
+├── webpack.config.cjs                 # Webpack configuration file
+└── package.json                      # Project dependencies
 ```
 
 ## Onboarding setup
