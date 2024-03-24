@@ -8,7 +8,7 @@
 ## Overview
 
 This is a seed project for vanilla single page application.  
-It's designed to be understandable, maintainable, adaptable, and modifiable.  
+It's designed to be understandable, maintainable, adaptable, scalable, and modifiable.  
 It's framework-agnostic but open to adapting frameworks and libraries.
 
 ## Technology stack
@@ -25,7 +25,7 @@ Feature oriented clean architecture.
 
 The architecture of this project adopts concepts such as Separation of concerns,  
 SOLID Principles, Software Design Patterns, Atomic Design, and Readable Code.  
-These concepts aim to develop applications that are easy to understand, maintain, adapt, and modify.
+These concepts aim to develop applications that are easy to understand, maintain, adapt, scale, and modify.
 
 However, while these concepts make it easier to understand the codebase and user requirements,  
 the concepts themselves are complex and hard to understand.
@@ -83,7 +83,7 @@ the concepts themselves are complex and hard to understand.
 │   │
 │   └── test                             # Test code
 │
-├── webpack.config.cjs                    # Webpack configuration
+├── webpack.config.cjs                   # Webpack configuration
 └── package.json                         # Project dependencies
 ```
 
