@@ -14,7 +14,6 @@ It's framework-agnostic but open to adapting frameworks and libraries.
 ## Technology stack
 
 Initial technology stack is simple.  
-_(Note: Change to your project specific technology stack if needed)_
 
 - [Web Components](https://developer.mozilla.org/en-US/docs/Web/API/Web_Components): Browser-native API for building reusable components.
 - [Webpack](https://webpack.js.org/): JavaScript bundler for the browser.
