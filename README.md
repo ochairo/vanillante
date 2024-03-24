@@ -40,7 +40,7 @@ the concepts themselves are complex and hard to understand.
 │
 ├── scripts                           # Shell scripts
 │   ├── deployment                    # - Deployment scripts
-│   └── onboarding                    # - Utility scripts for development tasks
+│   └── utilities                     # - Utility scripts for development tasks
 │
 └── src
     ├── app                           # Application code
