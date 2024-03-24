@@ -67,7 +67,7 @@ the concepts themselves are complex and hard to understand.
 │       ├── server                    # - Mock api server that use mock data
 │       └── test                      # - Test codes that use mock data
 │
-├── webpack.config.cjs                 # Webpack configuration file
+├── webpack.config.cjs                # Webpack configuration file
 └── package.json                      # Project dependencies
 ```
 
