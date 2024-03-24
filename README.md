@@ -33,33 +33,40 @@ the concepts themselves are complex and hard to understand.
 ## Directory structure
 
 ```sh
-./src
-  ├── app
-  │   ├── shared                // Shared components, styles, and utilities
-  │   │   ├── router            // Router configuration and utilities
-  │   │   ├── styles            // Shared stylesheets and CSS utils
-  │   │   └── ui-components     // Reusable UI components
-  │   │       ├── atoms         // Basic building blocks
-  │   │       ├── molecules     // Simple component groups
-  │   │       └── organisms     // Complex components
-  │   ├── features              // Feature-specific modules
-  │   │   └── ${feature name}   // Individual features
-  │   │       ├── data          // Data-related modules
-  │   │       │   ├── datasrc   // Data source implementations
-  │   │       │   └── repos     // Data access patterns
-  │   │       ├── domain        // Domain logic and entities
-  │   │       └── presentation  // Presentation layer components
-  │   ├── main.html             // Main HTML file
-  │   ├── main.ts               // Main TypeScript entry
-  │   └── routes.ts             // App routing configuration
-  │
-  ├── mock
-  │   ├── data                  // Mock data
-  │   └── server                // Mock server for backend
-  │
-  └── test
-      └── unit                  // Unit test files
-
+├── docs                              // Documentation files
+│   ├── images                        // Image resources
+│   └── wiki                          // Wiki pages
+│
+├── scripts                           // Shell scripts
+│   └── onboarding                    // Onboarding scripts
+│
+└── src                               // Source code
+    ├── app                           // Application code
+    │   ├── shared                    // Shared components and utilities
+    │   │   ├── router                // Router configurations
+    │   │   ├── styles                // Shared stylesheets
+    │   │   └── ui-components         // Reusable UI components
+    │   │       ├── atoms             // Basic UI elements
+    │   │       ├── molecules         // Simple component compositions
+    │   │       └── organisms         // Complex UI components
+    │   ├── features                  // Feature-specific code
+    │   │   └── ${feature name}       // Individual features
+    │   │       ├── data              // Data-related modules
+    │   │       │   ├── datasources   // Data sources
+    │   │       │   └── repositories  // Data repositories
+    │   │       ├── domain            // Domain logic
+    │   │       └── presentation      // Presentation components
+    │   ├── main.html                 // Main HTML file
+    │   ├── main.ts                   // Main TypeScript file
+    │   └── routes.ts                 // Routing configuration
+    │
+    ├── mock                          // Mock data and server
+    │   ├── data                      // Mock data files
+    │   └── server                    // Mock server files
+    │
+    └── test                          // Test files
+        ├── e2e                       // End-to-end tests
+        └── unit                      // Unit tests
 ```
 
 ## Onboarding setup
