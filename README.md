@@ -34,7 +34,7 @@ the concepts themselves are complex and hard to understand.
 
 ## Directory structure
 
-```sh
+```bash
 ├── docs                                 # Documentation files
 │   ├── diagrams                         # - Draw.io diagrams
 │   ├── images                           # - Images for documents
@@ -52,8 +52,10 @@ the concepts themselves are complex and hard to understand.
 │   │   ├── features                     # Features
 │   │   │   └── [feature]                # - A specific feature
 │   │   │       ├── data                 # - Data-related logic
-│   │   │       │   ├── local            # - Local data storage logic
-│   │   │       │   └── remote           # - Remote data fetching logic
+│   │   │       │   ├── datasources      # - Datasources for the feature
+│   │   │       │   │   ├── local        # - Local data storage logic
+│   │   │       │   │   └── remote       # - Remote data fetching logic
+│   │   │       │   └── repositories     # - Managing data access
 │   │   │       ├── domain               # - Feature-specific domain
 │   │   │       │   ├── interfaces       # - Interfaces used within the feature
 │   │   │       │   └── usecases         # - Feature-specific business logic
