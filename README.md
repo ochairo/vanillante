@@ -62,9 +62,9 @@ the concepts themselves are complex and hard to understand.
     │   ├── main.ts                   # - Main TypeScript file
     │   └── routes.ts                 # - Routing configuration
     │
-    └── mock                          # Mock data, server and test code
-        ├── data                      # - Mock data files
-        ├── server                    # - Mock server files
+    └── mock                          # Mock data, server and test
+        ├── data                      # - Mock json data files
+        ├── server                    # - Mock api server that use mock data
         └── test                      # - Test codes that use mock data
 ```
 
