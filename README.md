@@ -49,12 +49,7 @@ the concepts themselves are complex and hard to understand.
 │   │   │   ├── http                  # - HTTP-related code
 │   │   │   └── router                # - Router code
 │   │   ├── shared                    # - Shared components and utilities
-<<<<<<< Updated upstream
-│   │   │   ├── router                # - Router
-│   │   │   ├── styles                # - Stylesheets
-=======
 │   │   │   ├── styles                # - Shared stylesheets
->>>>>>> Stashed changes
 │   │   │   └── ui-components         # - Reusable UI components
 │   │   │       ├── atoms             # - Basic UI elements
 │   │   │       ├── molecules         # - Simple component compositions
