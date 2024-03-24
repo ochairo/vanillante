@@ -20,8 +20,10 @@ module.exports = {
       // FEATURES
       "@showcase": path.resolve("src/app/features/showcase"),
       "@error": path.resolve("src/app/features/error"),
-      // SHARED
-      "@shared": path.resolve("src/app/shared"),
+      // CORE
+      "@core": path.resolve("src/app/core"),
+      // INFRASTRUCTURE
+      "@infrastructure": path.resolve("src/app/infrastructure"),
       // MOCK
       "@mock": path.resolve("src/mock"),
       // TEST

@@ -1,6 +1,6 @@
 import errorModule from "@error/error.module";
 import showcaseModule from "@showcase/showcase.module";
-import { RouteConfig } from "./core/router/interfaces";
+import { RouteConfig } from "./infrastructure/router/interfaces";
 
 // LazyLoad feature modules
 export const routesConfig: RouteConfig[] = [

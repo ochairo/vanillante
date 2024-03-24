@@ -1,4 +1,4 @@
-import { router } from "./core/router/router";
+import { router } from "./infrastructure/router/router";
 import { routesConfig } from "./routes";
 
 const rootElement = document.getElementById("root")!;

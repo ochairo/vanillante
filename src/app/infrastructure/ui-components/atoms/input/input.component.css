@@ -1,0 +1,4 @@
+@import url("@infrastructure/styles/styles.css");
+input {
+  color: red;
+}

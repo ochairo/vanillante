@@ -21,7 +21,9 @@ Initial technology stack is simple.
 
 ## Architecture
 
-The architecture of this project adopts concepts such as Separation of concerns,  
+Feature oriented clean architecture.
+
+The architecture of this project (FOCA) adopts concepts such as Separation of concerns,  
 SOLID Principles, Software Design Patterns, Atomic Design, and Readable Code.  
 These concepts aim to develop applications that are easy to understand, maintain, adapt, and modify.
 
@@ -33,45 +35,54 @@ the concepts themselves are complex and hard to understand.
 ## Directory structure
 
 ```sh
-├── docs                              # Documentation files
-│   ├── diagrams                      # - Draw.io diagrams
-│   ├── images                        # - Images for documents
-│   └── wiki                          # - Wiki pages
+├── docs                                 # Documentation files
+│   ├── diagrams                         # - Draw.io diagrams
+│   ├── images                           # - Images for documents
+│   └── wiki                             # - Wiki pages
 │
-├── scripts                           # Shell scripts
-│   ├── deployment                    # - Deployment tasks
-│   └── utilities                     # - Utility scripts
+├── scripts                              # Shell scripts
+│   ├── deployment                       # - Deployment tasks
+│   └── utilities                        # - Utility scripts
 │
 ├── src
-│   ├── app                           # Application code
-│   │   ├── core                      # - Core application code
-│   │   │   ├── environment           # - Environment manager code
-│   │   │   ├── http                  # - HTTP-related code
-│   │   │   └── router                # - Router code
-│   │   ├── shared                    # - Shared components and utilities
-│   │   │   ├── styles                # - Shared stylesheets
-│   │   │   └── ui-components         # - Reusable UI components
-│   │   │       ├── atoms             # - Basic UI elements
-│   │   │       ├── molecules         # - Simple component compositions
-│   │   │       └── organisms         # - Complex UI components
-│   │   ├── features                  # - Feature-specific code
-│   │   │   └── ${feature name}       # - Individual features
-│   │   │       ├── data              # - Data-related modules
-│   │   │       │   ├── datasources   # - Data sources
-│   │   │       │   └── repositories  # - Data repositories
-│   │   │       ├── domain            # - Domain logic
-│   │   │       └── presentation      # - Presentation components
-│   │   ├── main.html                 # - Main HTML file
-│   │   ├── main.ts                   # - Main TypeScript file
-│   │   └── routes.ts                 # - Routing configuration
+│   ├── app
+│   │   ├── core                         # Core application code
+│   │   │   └── domain                   # - Domain-specific logic
+│   │   │
+│   │   ├── features                     # Features
+│   │   │   └── [feature]                # - A specific feature
+│   │   │       ├── data                 # - Data-related logic
+│   │   │       │   ├── local            # - Local data storage logic
+│   │   │       │   └── remote           # - Remote data fetching logic
+│   │   │       ├── domain               # - Feature-specific domain
+│   │   │       │   ├── interfaces       # - Interfaces used within the feature
+│   │   │       │   └── usecases         # - Feature-specific business logic
+│   │   │       ├── presentation         # - Presentation components for the feature
+│   │   │       └── [feature].module.ts  # - Module file for the feature
+│   │   │
+│   │   ├── infrastructure               # Infrastructure code
+│   │   │   ├── adapters                 # - Adapters for external services
+│   │   │   │   └── auth                 # - Adapter for external auth services
+│   │   │   ├── http                     # - HTTP-related code
+│   │   │   ├── router                   # - Router code for handling routing
+│   │   │   ├── styles                   # - Stylesheets for styling the application
+│   │   │   └── ui-components            # - UI components
+│   │   │       ├── atoms                # - Basic UI elements
+│   │   │       ├── molecules            # - Simple UI components
+│   │   │       └── organisms            # - Complex UI components
+│   │   │
+│   │   ├── main.html                    # Entry point
+│   │   ├── main.ts                      # Bootstrapping
+│   │   └── routes.ts                    # Routing configuration
 │   │
-│   └── mock                          # Mock data, server and test
-│       ├── data                      # - Mock data in json files
-│       ├── server                    # - Mock api server using mock data
-│       └── test                      # - Test codes using mock data
+│   ├── mock                             # Mock data and mock API server
+│   │   ├── data                         # - Mock data stored in JSON files
+│   │   └── server                       # - Mock API server utilizing the mock data
+│   │
+│   └── test                             # Test code
 │
-├── webpack.config.cjs                # Webpack configuration file
-└── package.json                      # Project dependencies
+├── webpack.config.cjs                    # Webpack configuration
+└── package.json                         # Project dependencies
 ```
 
 ## Onboarding setup

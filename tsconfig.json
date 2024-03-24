@@ -13,8 +13,10 @@
       // FEATURES
       "@showcase/*": ["./src/app/features/showcase/*"],
       "@error/*": ["./src/app/features/error/*"],
-      // SHARED
-      "@shared/*": ["./src/app/shared/*"],
+      // CORE
+      "@core/*": ["./src/app/core/*"],
+      // INFRASTRUCTURE
+      "@infrastructure/*": ["./src/app/infrastructure/*"],
       // MOCK
       "@mock/*": ["./src/mock/*"],
       // TEST

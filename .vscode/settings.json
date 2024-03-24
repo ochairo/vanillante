@@ -72,6 +72,8 @@
     "codespaces",
     "datasource",
     "datasources",
+    "drawio",
+    "foca",
     "lefthook",
     "ochairo",
     "shellscripts",
@@ -79,8 +81,7 @@
     "usecase",
     "usecases",
     "vanillatte",
-    "vaníllatte",
-    "drawio"
+    "vaníllatte"
   ],
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": "explicit",
