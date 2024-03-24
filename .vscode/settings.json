@@ -79,7 +79,8 @@
     "usecase",
     "usecases",
     "vanillatte",
-    "vaníllatte"
+    "vaníllatte",
+    "drawio"
   ],
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": "explicit",
