@@ -35,18 +35,17 @@ the concepts themselves are complex and hard to understand.
 ## Directory structure
 
 ```bash
-├── docs                                 # Documentation files
+├── docs                                 # Documentation
 │   ├── diagrams                         # - Draw.io diagrams
 │   ├── images                           # - Images for documents
 │   └── wiki                             # - Wiki pages
 │
-├── scripts                              # Shell scripts
+├── scripts                              # Shellscripts
 │   ├── deployment                       # - Deployment tasks
 │   └── utilities                        # - Utility scripts
-│
 ├── src
 │   ├── app
-│   │   ├── core                         # Core application code
+│   │   ├── core                         # Core
 │   │   │   └── domain                   # - Domain-specific logic
 │   │   │
 │   │   ├── features                     # Features
@@ -62,7 +61,7 @@ the concepts themselves are complex and hard to understand.
 │   │   │       ├── presentation         # - Presentation components for the feature
 │   │   │       └── [feature].module.ts  # - Module file for the feature
 │   │   │
-│   │   ├── infrastructure               # Infrastructure code
+│   │   ├── infrastructure               # Infrastructure
 │   │   │   ├── adapters                 # - Adapters for external services
 │   │   │   │   └── auth                 # - Adapter for external auth services
 │   │   │   ├── http                     # - HTTP-related code
@@ -73,15 +72,15 @@ the concepts themselves are complex and hard to understand.
 │   │   │       ├── molecules            # - Simple UI components
 │   │   │       └── organisms            # - Complex UI components
 │   │   │
-│   │   ├── main.html                    # Entry point
+│   │   ├── main.html                    # Entry point html
 │   │   ├── main.ts                      # Bootstrapping
 │   │   └── routes.ts                    # Routing configuration
 │   │
-│   ├── mock                             # Mock data and mock API server
+│   ├── mock                             # Mock
 │   │   ├── data                         # - Mock data stored in JSON files
 │   │   └── server                       # - Mock API server utilizing the mock data
 │   │
-│   └── test                             # Test code
+│   └── test                             # Test
 │
 ├── webpack.config.cjs                   # Webpack configuration
 └── package.json                         # Project dependencies
