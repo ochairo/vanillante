@@ -66,9 +66,9 @@ the concepts themselves are complex and hard to understand.
 │   │   └── routes.ts                 # - Routing configuration
 │   │
 │   └── mock                          # Mock data, server and test
-│       ├── data                      # - Mock json data files
-│       ├── server                    # - Mock api server that use mock data
-│       └── test                      # - Test codes that use mock data
+│       ├── data                      # - Mock data in json files
+│       ├── server                    # - Mock api server using mock data
+│       └── test                      # - Test codes using mock data
 │
 ├── webpack.config.cjs                # Webpack configuration file
 └── package.json                      # Project dependencies
