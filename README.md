@@ -39,8 +39,8 @@ the concepts themselves are complex and hard to understand.
 │   └── wiki                          # - Wiki pages
 │
 ├── scripts                           # Shell scripts
-│   ├── deployment                    # - Deployment scripts
-│   └── utilities                     # - Utility scripts for development tasks
+│   ├── deployment                    # - Deployment tasks
+│   └── utilities                     # - Utility scripts
 │
 └── src
     ├── app                           # Application code
