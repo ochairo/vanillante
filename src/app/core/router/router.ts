@@ -1,41 +1,28 @@
-// FIXME: any
-// eslint-disable-next-line @typescript-eslint/no-explicit-any
-type ModuleLoader = () => Promise<{ [key: string]: any }>;
-export interface RouteConfig {
-  path?: string;
-  moduleLoader?: ModuleLoader;
-  /** TODO: children */
-  children?: RouteConfig;
-  default?: { moduleLoader: ModuleLoader };
-}
+import { ModuleLoader, RouteConfig } from "./interfaces";
 
-export const setRoutes = (routes: RouteConfig[], rootElement: HTMLElement) => {
-  window.addEventListener("popstate", () => router(routes, rootElement));
-  document.addEventListener("DOMContentLoaded", () =>
-    router(routes, rootElement)
-  );
-};
-
-const router = async (routes: RouteConfig[], rootElement: HTMLElement) => {
+export const router = async (
+  routes: RouteConfig[],
+  rootElement: HTMLElement
+) => {
   const path = window.location.pathname;
   const route = routes.find((route) => route.path === path);
   const defaultRoute = routes.find((route) => route.default);
 
   if (route) {
-    await loadModule(route.moduleLoader, rootElement);
+    await _loadModule(route.moduleLoader, rootElement);
   } else if (defaultRoute && defaultRoute.default) {
-    await loadModule(defaultRoute.default.moduleLoader, rootElement);
+    await _loadModule(defaultRoute.default.moduleLoader, rootElement);
   } else {
-    displayNotFound(rootElement);
+    _displayNotFound(rootElement);
   }
 };
 
-const loadModule = async (
+const _loadModule = async (
   moduleLoader: ModuleLoader | undefined,
   rootElement: HTMLElement
 ) => {
   if (!moduleLoader) {
-    displayError(rootElement);
+    _displayError(rootElement);
     return;
   }
 
@@ -43,22 +30,22 @@ const loadModule = async (
     const componentModule = await moduleLoader();
     const key = Object.keys(componentModule)[0];
     const Component = componentModule?.[key!];
-    clearRootElement(rootElement);
+    _clearRootElement(rootElement);
     rootElement.appendChild(Component);
   } catch (error) {
     console.error("Error loading component:", error);
-    displayError(rootElement);
+    _displayError(rootElement);
   }
 };
 
-const clearRootElement = (rootElement: HTMLElement) => {
+const _clearRootElement = (rootElement: HTMLElement) => {
   rootElement.innerHTML = "";
 };
 
-const displayNotFound = (rootElement: HTMLElement) => {
+const _displayNotFound = (rootElement: HTMLElement) => {
   rootElement.innerHTML = "<h1>404 - Not Found</h1>";
 };
 
-const displayError = (rootElement: HTMLElement) => {
+const _displayError = (rootElement: HTMLElement) => {
   rootElement.innerHTML = "<h1>Error loading page</h1>";
 };

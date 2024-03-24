@@ -1,5 +1,10 @@
-import { setRoutes } from "./core/router/router";
-import { routes } from "./routes";
+import { router } from "./core/router/router";
+import { routeConfigs } from "./routes";
 
 const rootElement = document.getElementById("root")!;
-setRoutes(routes, rootElement);
+(() => {
+  window.addEventListener("popstate", () => router(routeConfigs, rootElement));
+  document.addEventListener("DOMContentLoaded", () =>
+    router(routeConfigs, rootElement)
+  );
+})();
