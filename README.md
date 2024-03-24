@@ -21,7 +21,7 @@ Initial technology stack is simple.
 
 ## Architecture
 
-Feature oriented clean architecture.
+Modular clean architecture.
 
 The architecture of this project adopts concepts such as Separation of concerns,  
 SOLID Principles, Software Design Patterns, Atomic Design, and Readable Code.  
