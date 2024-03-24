@@ -4,7 +4,6 @@ Classes:
 
 - Example: `Component`, `App`
 - Camel case with first letter uppercase
-- TODO: ...
 
 Interfaces:
 

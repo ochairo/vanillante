@@ -28,43 +28,38 @@ These concepts aim to develop applications that are easy to understand, maintain
 However, while these concepts make it easier to understand the codebase and user requirements,  
 the concepts themselves are complex and hard to understand.
 
-![architecture](./docs/images/architecture.png)
+![architecture](docs/images/architecture.png)
 
 ## Directory structure
 
 ```sh
-├── docs                              // documents for code-based-wiki
-│   ├── images
-│   └── wiki
-├── scripts                           // shellscript to automatize
-│   └── onboarding
-└── src
-    ├── app
-    │   ├── shared
-    │   │   ├── router
-    │   │   ├── styles
-    │   │   └── ui-components
-    │   │       ├── atoms
-    │   │       ├── molecules
-    │   │       └── organisms
-    │   ├── features                  // most of the requirements will be developed here
-    │   │   └── ${feature name}
-    │   │       ├── data
-    │   │       │   ├── datasources
-    │   │       │   └── repositories
-    │   │       ├── domain
-    │   │       │   ├── entities
-    │   │       │   └── usecases
-    │   │       └── presentation
-    │   ├── main.html
-    │   ├── main.ts
-    │   └── routes.ts
-    ├── mock                          // mock codes
-    │   ├── data                      // mock-data for test code and local server
-    │   └── server                    // mock-server for local development
-    └── test                          // test codes
-        ├── e2e                       // end-to-end test code
-        └── unit                      // unit test code
+./src
+  ├── app
+  │   ├── shared                // Shared components, styles, and utilities
+  │   │   ├── router            // Router configuration and utilities
+  │   │   ├── styles            // Shared stylesheets and CSS utils
+  │   │   └── ui-components     // Reusable UI components
+  │   │       ├── atoms         // Basic building blocks
+  │   │       ├── molecules     // Simple component groups
+  │   │       └── organisms     // Complex components
+  │   ├── features              // Feature-specific modules
+  │   │   └── ${feature name}   // Individual features
+  │   │       ├── data          // Data-related modules
+  │   │       │   ├── datasrc   // Data source implementations
+  │   │       │   └── repos     // Data access patterns
+  │   │       ├── domain        // Domain logic and entities
+  │   │       └── presentation  // Presentation layer components
+  │   ├── main.html             // Main HTML file
+  │   ├── main.ts               // Main TypeScript entry
+  │   └── routes.ts             // App routing configuration
+  │
+  ├── mock
+  │   ├── data                  // Mock data
+  │   └── server                // Mock server for backend
+  │
+  └── test
+      └── unit                  // Unit test files
+
 ```
 
 ## Onboarding setup
@@ -72,22 +67,21 @@ the concepts themselves are complex and hard to understand.
 You have multiple options for setting up this project:
 
 - **Shellscript setup:**  
-  Execute the provided setup script to automate the process.  
+  Automated predeterminate setups.  
   Recommended for quick and easy setup.
 
-  ```sh
-  ./scripts/onboarding/setup.sh
-  ```
+  - [How to shellscript setup](docs/wiki/onboarding-setup/shellscript_setup.md)
 
 - **Manually setup:**  
   You can manually set up the project following the steps outlined below.  
   This option provides more control over the setup process.
 
-  - TODO: [How to manually setup](https://github.com/ochairo/vanillatte/tree/development?tab=readme-ov-file#vanillatte)
+  - [How to manually setup](docs/wiki/onboarding-setup/manually_setup.md)
 
 - **Github codespace setup:**  
   Utilize github codespaces for a cloud-based development environment.
-  - TODO: [How to setup github codespace](https://github.com/ochairo/vanillatte/tree/development?tab=readme-ov-file#vanillatte)
+
+  - [How to setup github codespace](docs/wiki/onboarding-setup/codespace_setup.md)
 
 ## Development
 
@@ -104,17 +98,18 @@ You have multiple options for development.
   This command will launch the development server,  
   and your application will be accessible at `http://localhost:8080`.
 
-### Local docker environment (TODO)
+### Local docker environment
 
-- ...
+- TODO: Start the local development server by  
+  ...
 
-### Github codespace (TODO)
+### Github codespace
 
-- ...
+- TODO: Start the local development server by  
+  ...
 
-## Others
+## Development rules
 
-- TODO: [Development flow](https://github.com/ochairo/vanillatte/tree/development?tab=readme-ov-file#vanillatte)
-- TODO: [Naming conventions](./docs/wiki/NAMING_CONVENTIONS.md)
-- TODO: [Commit rules](https://github.com/ochairo/vanillatte/tree/development?tab=readme-ov-file#vanillatte)
-- TODO: [Branch strategy](https://github.com/ochairo/vanillatte/tree/development?tab=readme-ov-file#vanillatte)
+- [Naming conventions](docs/wiki/development-rules/naming_conventions.md)
+- [Commit rules](docs/wiki/development-rules/commit_rules.md)
+- [Branch strategy](docs/wiki/development-rules/branch_strategy.md)
