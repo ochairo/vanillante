@@ -27,7 +27,7 @@ The architecture of this project adopts concepts such as Separation of concerns,
 SOLID Principles, Software Design Patterns, Atomic Design, and Readable Code.  
 These concepts aim to develop applications that are easy to understand, maintain, adapt, scale, test, and modify.
 
-However, while these concepts make it easier to understand the codebase and user requirements,  
+However, while these concepts aim to make it easier to understand the codebase and user requirements,  
 the concepts themselves are complex and hard to understand.
 
 ![architecture](docs/images/architecture.png)
