@@ -7,7 +7,9 @@
 
 ## Overview
 
-This starter template is for vanilla single-page applications, emphasizing simplicity and flexibility. It's framework-agnostic and aims to have zero dependencies, allowing easy customization with additional frameworks and libraries.
+This is a starter project for single page applications.  
+It is framework agnostic and aims to be maintainable, scalable and modifiable.  
+It has no dependencies, allowing for easy customization with frameworks and libraries.
 
 ## Technology stack
 
@@ -19,7 +21,9 @@ Initial technology stack is simple.
 
 ## Architecture
 
-The architecture follows key principles including Separation of Concerns, SOLID Principles, Atomic Design, and prioritizes Readable Code. This ensures applications built with it are easy to maintain, scale, adapt, and modify.
+The architecture follows key principles including separation of concerns,  
+SOLID principles, atomic design software design patterns and readable code.  
+This ensures that applications created with this project as a base are easy to maintain, scale and modify.
 
 ![architecture](docs/images/architecture.png)
 
