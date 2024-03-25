@@ -22,7 +22,7 @@ Initial technology stack is simple.
 ## Architecture
 
 The architecture follows key principles including separation of concerns,  
-SOLID principles, atomic design software design patterns and readable code.  
+SOLID principles, atomic design, software design patterns and readable code.  
 This ensures that the application will be easy to maintain, scale, and modify.
 
 ![architecture](docs/images/architecture.png)
