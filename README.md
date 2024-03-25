@@ -21,8 +21,6 @@ Initial technology stack is simple.
 
 ## Architecture
 
-Modular clean architecture.
-
 The architecture of this project adopts concepts such as Separation of concerns,  
 SOLID Principles, Software Design Patterns, Atomic Design, and Readable Code.  
 These concepts aim to develop applications that are easy to understand, maintain, and scale.
