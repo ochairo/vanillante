@@ -21,12 +21,9 @@ Initial technology stack is simple.
 
 ## Architecture
 
-The architecture of this project adopts concepts such as Separation of concerns,  
-SOLID Principles, Software Design Patterns, Atomic Design, and Readable Code.  
+The architecture of this project adopts concepts such as  
+Separation of concerns, SOLID Principles, Atomic Design, and Readable Code.  
 These concepts aim to develop applications that are easy to understand, maintain, and scale.
-
-However, while these concepts aim to make it easier to understand the codebase and user requirements,  
-the concepts themselves are complex and hard to understand.
 
 ![architecture](docs/images/architecture.png)
 
