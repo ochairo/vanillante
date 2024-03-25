@@ -11,6 +11,19 @@ export const routesConfig: RouteConfig[] = [
   {
     path: "/showcase",
     moduleLoader: showcaseModule,
+    // Sample for nesting routes
+    children: [
+      {
+        path: "/showcase",
+        moduleLoader: showcaseModule,
+        children: [
+          {
+            path: "/showcase",
+            moduleLoader: errorModule,
+          },
+        ],
+      },
+    ],
   },
   {
     path: "/error",

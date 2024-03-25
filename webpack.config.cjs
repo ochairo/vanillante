@@ -6,7 +6,11 @@ console.info("NODE_ENV:", process.env.NODE_ENV);
 module.exports = {
   mode: "production",
   entry: "./src/app/main.ts",
-  output: { path: path.resolve(__dirname, "dist"), filename: "bundle.js" },
+  output: {
+    filename: "bundle.js",
+    path: path.resolve(__dirname, "dist"),
+    publicPath: "/",
+  },
   module: {
     rules: [
       { test: /\.ts$/i, loader: "swc-loader" },
