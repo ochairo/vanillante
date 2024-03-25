@@ -1,8 +1,6 @@
-import { router } from "./infrastructure/router/router";
+import Router from "@infrastructure/router/router";
 import { routesConfig } from "./routes";
 
 const rootElement = document.getElementById("root")!;
-window.addEventListener("popstate", () => router(routesConfig, rootElement));
-document.addEventListener("DOMContentLoaded", () =>
-  router(routesConfig, rootElement)
-);
+const router = new Router(routesConfig, rootElement);
+router.navigate();

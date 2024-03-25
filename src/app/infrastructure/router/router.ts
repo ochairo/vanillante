@@ -1,67 +1,102 @@
-import { RouteConfig } from "./interfaces";
+import { Module, RouteConfig } from "@infrastructure/router/interfaces";
 
-export const router = async (
-  routes: RouteConfig[],
-  rootElement: HTMLElement
-) => {
-  const path = window.location.pathname;
-  const matchedRoute = findRoute(routes, path);
+class Router {
+  constructor(
+    private routes: RouteConfig[],
+    private rootElement: HTMLElement
+  ) {}
 
-  if (matchedRoute) {
-    await loadRoute(matchedRoute, rootElement);
-  } else {
-    displayNotFound(rootElement);
+  async navigate() {
+    const sanitizedPath = window.location.pathname
+      .replace(/\/+/g, "/")
+      .replace(/\/+$/, "");
+    const currentPath = sanitizedPath;
+    console.log("URL", new URL(window.location.href));
+    const matchedRoute = await this.findMatchingRoute(
+      this.routes,
+      currentPath,
+      this.rootElement
+    );
+
+    if (!matchedRoute) {
+      this.displayNotFound();
+      return;
+    }
+
+    if (!matchedRoute.moduleLoader) {
+      this.displayError();
+      return;
+    }
+
+    try {
+      const module = await matchedRoute.moduleLoader();
+      this.renderModule(module);
+    } catch (error) {
+      console.error("Error loading page:", error);
+      this.displayError();
+    }
   }
-};
 
-const findRoute = (
-  routes: RouteConfig[],
-  path: string
-): RouteConfig | undefined => {
-  for (const route of routes) {
-    if (route.path === path) {
-      return route;
-    } else if (route.children) {
-      const nestedRoute = findRoute(
-        route.children.map((childRoute) => ({
-          ...childRoute,
-          path:
-            route.path && childRoute.path ? route.path + childRoute.path : "",
-        })),
-        path
-      );
-      if (nestedRoute) {
-        return nestedRoute;
+  private async findMatchingRoute(
+    routes: RouteConfig[],
+    path: string,
+    rootElement: HTMLElement
+  ): Promise<RouteConfig | undefined> {
+    for (const route of routes) {
+      if (route.canActivate) {
+        const canActivate = await route.canActivate();
+        if (!canActivate) {
+          this.displayAccessDenied();
+          return;
+        }
+      }
+
+      if (route.path === "/" && path === "") {
+        return route;
+      }
+      if (route.path === path) {
+        return route;
+      }
+      if (route.children) {
+        if (route.path && route.path !== "/") {
+          for (const child of route.children) {
+            child.path = route.path! + child.path;
+          }
+        }
+        const matchedChild = await this.findMatchingRoute(
+          route.children,
+          path,
+          rootElement
+        );
+        if (matchedChild) {
+          return matchedChild;
+        }
+      }
+    }
+
+    return undefined;
+  }
+
+  private renderModule(module: Module) {
+    this.rootElement.innerHTML = "";
+    for (const key in module) {
+      if (Object.prototype.hasOwnProperty.call(module, key)) {
+        this.rootElement.appendChild(module[key]);
       }
     }
   }
-  return undefined;
-};
 
-const loadRoute = async (route: RouteConfig, rootElement: HTMLElement) => {
-  if (route.moduleLoader) {
-    try {
-      const componentModule = await route.moduleLoader();
-      const key = Object.keys(componentModule)[0];
-      const Component = componentModule?.[key!];
-      clearRootElement(rootElement);
-      rootElement.appendChild(Component);
-    } catch (error) {
-      displayError(rootElement);
-    }
-  } else {
-    displayError(rootElement);
+  private displayNotFound() {
+    this.rootElement.innerHTML = "<h1>404 - Not Found</h1>";
   }
-};
 
-const clearRootElement = (rootElement: HTMLElement) => {
-  rootElement.innerHTML = "";
-};
+  private displayError() {
+    this.rootElement.innerHTML = "<h1>Error loading page</h1>";
+  }
 
-const displayNotFound = (rootElement: HTMLElement) => {
-  rootElement.innerHTML = "<h1>404 - Not Found</h1>";
-};
+  private displayAccessDenied() {
+    this.rootElement.innerHTML = "<h1>Access Denied</h1>";
+  }
+}
 
-const displayError = (rootElement: HTMLElement) => {
-  rootElement.innerHTML = "<h1>Error loading page</h1>";
-};
+export default Router;
