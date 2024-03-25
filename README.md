@@ -8,8 +8,8 @@
 ## Overview
 
 This is a seed project for vanilla single page applications.  
-It is framework agnostic and aims to be maintainable, scalable and modifiable.  
-It aims to have minimal runtime dependencies, enabling easy customization with frameworks and libraries.
+It is framework agnostic with minimal runtime dependencies,  
+enabling easy customization with frameworks and libraries.
 
 ## Technology stack
 
