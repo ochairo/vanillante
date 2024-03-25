@@ -9,7 +9,7 @@
 
 This project is a starter template for single-page applications.  
 It's designed to be easy to maintain, scale, adapt, and modify.  
-It's framework-agnostic and it aims to have zero dependencies. 
+It's framework-agnostic and it aims to have zero dependencies.  
 This allows for flexibility in customization with additional frameworks and libraries as needed.
 
 ## Technology stack
