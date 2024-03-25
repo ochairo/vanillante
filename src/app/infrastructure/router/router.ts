@@ -1,4 +1,6 @@
+import { ERRORS } from "@infrastructure/router/constants";
 import { Module, RouteConfig } from "@infrastructure/router/interfaces";
+import RouterError from "./error";
 
 class Router {
   constructor(
@@ -6,35 +8,36 @@ class Router {
     private rootElement: HTMLElement
   ) {}
 
-  async navigate() {
-    const sanitizedPath = window.location.pathname
-      .replace(/\/+/g, "/")
-      .replace(/\/+$/, "");
-    const currentPath = sanitizedPath;
-    console.log("URL", new URL(window.location.href));
-    const matchedRoute = await this.findMatchingRoute(
-      this.routes,
-      currentPath,
-      this.rootElement
-    );
-
-    if (!matchedRoute) {
-      this.displayNotFound();
-      return;
-    }
-
-    if (!matchedRoute.moduleLoader) {
-      this.displayError();
-      return;
-    }
-
+  /**
+   * Router navigation method
+   * @returns Promise<void>
+   */
+  async navigate(): Promise<void> {
     try {
+      const currentPath = this.getSanitizedPath(window.location.pathname);
+      const matchedRoute = await this.findMatchingRoute(
+        this.routes,
+        currentPath,
+        this.rootElement
+      );
+
+      if (!matchedRoute) {
+        throw this.routeNotFoundError();
+      }
+
+      if (!matchedRoute.moduleLoader) {
+        throw this.loaderNotFoundError();
+      }
+
       const module = await matchedRoute.moduleLoader();
       this.renderModule(module);
     } catch (error) {
-      console.error("Error loading page:", error);
-      this.displayError();
+      this.handleNavigationError(error);
     }
+  }
+
+  private getSanitizedPath(path: string): string {
+    return path.replace(/\/+/g, "/").replace(/\/+$/, "");
   }
 
   private async findMatchingRoute(
@@ -43,41 +46,59 @@ class Router {
     rootElement: HTMLElement
   ): Promise<RouteConfig | undefined> {
     for (const route of routes) {
-      if (route.canActivate) {
-        const canActivate = await route.canActivate();
-        if (!canActivate) {
-          this.displayAccessDenied();
-          return;
-        }
-      }
-
-      if (route.path === "/" && path === "") {
-        return route;
-      }
-      if (route.path === path) {
-        return route;
-      }
-      if (route.children) {
-        if (route.path && route.path !== "/") {
-          for (const child of route.children) {
-            child.path = route.path! + child.path;
+      try {
+        if (route.canActivate) {
+          const canActivate = await route.canActivate();
+          if (!canActivate) {
+            this.displayAccessDenied();
+            return;
           }
         }
-        const matchedChild = await this.findMatchingRoute(
-          route.children,
-          path,
-          rootElement
-        );
-        if (matchedChild) {
-          return matchedChild;
+
+        if (this.isExactMatch(route.path, path)) {
+          return route;
         }
+
+        if (route.children) {
+          const updatedChildren = this.updateChildPaths(route);
+          const matchedChild = await this.findMatchingRoute(
+            updatedChildren,
+            path,
+            rootElement
+          );
+          if (matchedChild) {
+            return matchedChild;
+          }
+        }
+      } catch (error) {
+        console.error("Error during route activation:", error);
+        this.displayError();
       }
     }
 
     return undefined;
   }
 
-  private renderModule(module: Module) {
+  private isExactMatch(routePath: string, currentPath: string): boolean {
+    return (
+      (routePath === "/" && currentPath === "") || routePath === currentPath
+    );
+  }
+
+  private updateChildPaths(route: RouteConfig): RouteConfig[] {
+    if (!route.path || route.path === "/") {
+      return route.children || [];
+    }
+
+    return (route.children || []).map((child) => {
+      return {
+        ...child,
+        path: route.path + child.path,
+      };
+    });
+  }
+
+  private renderModule(module: Module): void {
     this.rootElement.innerHTML = "";
     for (const key in module) {
       if (Object.prototype.hasOwnProperty.call(module, key)) {
@@ -86,15 +107,50 @@ class Router {
     }
   }
 
-  private displayNotFound() {
+  private routeNotFoundError(): RouterError {
+    return new RouterError(
+      ERRORS.ROUTE_NOT_FOUND.message,
+      ERRORS.ROUTE_NOT_FOUND.status
+    );
+  }
+
+  private loaderNotFoundError(): RouterError {
+    return new RouterError(
+      ERRORS.ROUTE_NOT_FOUND.message,
+      ERRORS.ROUTE_NOT_FOUND.status
+    );
+  }
+
+  private handleNavigationError(error: unknown): void {
+    if (error instanceof RouterError) {
+      console.error("Error during navigation:", error);
+      switch (error.status) {
+        case ERRORS.ROUTE_NOT_FOUND.status:
+          this.displayNotFound();
+          break;
+        case ERRORS.LOADER_NOT_FOUND.status:
+          this.displayError();
+          break;
+        default:
+          this.displayError();
+          break;
+      }
+    } else {
+      this.displayError();
+      console.error("Error during route activation:", error);
+      throw error;
+    }
+  }
+
+  private displayNotFound(): void {
     this.rootElement.innerHTML = "<h1>404 - Not Found</h1>";
   }
 
-  private displayError() {
+  private displayError(): void {
     this.rootElement.innerHTML = "<h1>Error loading page</h1>";
   }
 
-  private displayAccessDenied() {
+  private displayAccessDenied(): void {
     this.rootElement.innerHTML = "<h1>Access Denied</h1>";
   }
 }
