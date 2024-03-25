@@ -9,7 +9,7 @@
 
 This is a starter project for single page applications.  
 It is framework agnostic and aims to be maintainable, scalable and modifiable.  
-It has no dependencies, allowing for easy customization with frameworks and libraries.
+It has no run time dependencies, allowing for easy customization with frameworks and libraries.
 
 ## Technology stack
 
