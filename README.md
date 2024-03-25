@@ -7,9 +7,9 @@
 
 ## Overview
 
-This is a seed project for vanilla single page applications.  
-It is framework agnostic with minimal runtime dependencies,  
-enabling easy customization with frameworks and libraries.
+This is a starter template project for single page applications in vanilla-ts.  
+It is framework agnostic with minimal runtime dependencies, enabling easy customization with  
+frameworks and libraries.
 
 ## Technology stack
 
@@ -21,8 +21,9 @@ Initial technology stack is simple.
 
 ## Architecture
 
-The architecture follows key principles including separation of concerns,  
-SOLID principles, atomic design, software design patterns and readable code.  
+The architecture follows key principles including separation of concerns, SOLID principles,  
+atomic design, software design patterns and readable code.
+
 This ensures that the application will be easy to maintain, scale, and modify.
 
 ![architecture](docs/images/architecture.png)
