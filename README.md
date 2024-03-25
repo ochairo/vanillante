@@ -46,7 +46,8 @@ the concepts themselves are complex and hard to understand.
 ├── src
 │   ├── app
 │   │   ├── core                         # Core
-│   │   │   └── domain                   # - Domain-specific logic
+│   │   │   └── domain                   # - Core business logics
+│   │   │       └── usecases             # - Core usecases
 │   │   │
 │   │   ├── features                     # Features
 │   │   │   └── [feature]                # - A specific feature
@@ -55,7 +56,7 @@ the concepts themselves are complex and hard to understand.
 │   │   │       │   │   ├── local        # - Local data storage logic
 │   │   │       │   │   └── remote       # - Remote data fetching logic
 │   │   │       │   └── repositories     # - Managing data access
-│   │   │       ├── domain               # - Feature-specific domain
+│   │   │       ├── domain               # - Feature-specific domain (can reference core domain)
 │   │   │       │   ├── interfaces       # - Interfaces used within the feature
 │   │   │       │   └── usecases         # - Feature-specific business logic
 │   │   │       ├── presentation         # - Presentation components for the feature
