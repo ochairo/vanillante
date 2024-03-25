@@ -7,9 +7,11 @@
 
 ## Overview
 
-This is a seed project for vanilla single page application.  
-It's designed to be understandable, maintainable and scalable.  
-It's framework-agnostic but open to adapting frameworks and libraries.
+This is a seed project for a vanilla single-page application  
+designed to be easily understood, maintained, and scalable.
+
+It is framework-agnostic and aims to have zero dependencies,  
+but it can also be adapted to incorporate frameworks and libraries as needed.
 
 ## Technology stack
 
