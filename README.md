@@ -7,11 +7,10 @@
 
 ## Overview
 
-This is a seed project for a vanilla single-page application  
-designed to be easily understood, maintained, and scalable.
-
-It is framework-agnostic and aims to have zero dependencies,  
-but it can also be adapted to incorporate frameworks and libraries as needed.
+This project is a starter template for single-page applications.  
+It's designed to be easy to maintain, scale, adapt, and modify.  
+It's framework-agnostic and it aims to have zero dependencies. 
+This allows for flexibility in customization with additional frameworks and libraries as needed.
 
 ## Technology stack
 
@@ -23,9 +22,9 @@ Initial technology stack is simple.
 
 ## Architecture
 
-The architecture of this project adopts concepts such as  
-Separation of concerns, SOLID Principles, Atomic Design, and Readable Code.  
-These concepts aim to develop applications that are easy to understand, maintain, and scale.
+The project's architecture follows fundamental principles such as Separation of Concerns,  
+SOLID Principles, Atomic Design, and Readable Code. By adhering to these principles,  
+it ensures that applications built with it are straightforward to maintain, scale, adapt, and modify.
 
 ![architecture](docs/images/architecture.png)
 
