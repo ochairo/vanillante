@@ -21,7 +21,7 @@ Initial technology stack is simple.
 
 ## Architecture
 
-The project is architecture agnostic, but follows key principles including separation of concerns,  
+It is architecture agnostic, but follows key principles including separation of concerns,  
 SOLID principles, atomic design, software design patterns and readable code.
 
 This ensures that the application will be easy to maintain, scale, modify and enables integrations of architectures.
