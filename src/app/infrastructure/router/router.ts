@@ -9,10 +9,14 @@ class Router {
   ) {}
 
   /**
-   * Router navigation method
-   * @returns Promise<void>
+   * Initializes the router by adding event listeners and rendering the initial module.
    */
-  async navigate(): Promise<void> {
+  init(): void {
+    window.addEventListener("popstate", () => this.navigate());
+    document.addEventListener("DOMContentLoaded", () => this.navigate());
+  }
+
+  private async navigate(): Promise<void> {
     try {
       const currentPath = this.getSanitizedPath(window.location.pathname);
       const matchedRoute = await this.findMatchingRoute(
