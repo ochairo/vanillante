@@ -5,22 +5,23 @@
 {
   "recommendations": [
     "aaron-bond.better-comments",
+    "anseki.vscode-color",
     "chrmarti.regex",
+    "DavidAnson.vscode-markdownlint",
+    "dbaeumer.vscode-eslint",
+    "eamodio.gitlens",
+    "EditorConfig.EditorConfig",
+    "esbenp.prettier-vscode",
+    "formulahendry.auto-close-tag",
+    "foxundermoon.shell-format",
+    "GitHub.copilot-chat",
+    "GitHub.copilot",
+    "hediet.vscode-drawio",
+    "mhutchie.git-graph",
+    "pomdtr.excalidraw-editor",
     "streetsidesoftware.code-spell-checker",
     "usernamehw.errorlens",
-    "wmaurer.change-case",
-    "esbenp.prettier-vscode",
-    "EditorConfig.EditorConfig",
-    "foxundermoon.shell-format",
-    "GitHub.copilot",
-    "GitHub.copilot-chat",
-    "eamodio.gitlens",
-    "mhutchie.git-graph",
-    "formulahendry.auto-close-tag",
-    "anseki.vscode-color",
-    "dbaeumer.vscode-eslint",
-    "DavidAnson.vscode-markdownlint",
-    "hediet.vscode-drawio",
-    "wayou.vscode-todo-highlight"
+    "wayou.vscode-todo-highlight",
+    "wmaurer.change-case"
   ]
 }
