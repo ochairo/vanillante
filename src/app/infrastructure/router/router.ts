@@ -3,22 +3,49 @@ import { Module, RouteConfig } from "@infrastructure/router/interfaces";
 import RouterError from "./error";
 
 class Router {
-  constructor(
+  private static instance: Router | null = null;
+
+  private constructor(
     private routes: RouteConfig[],
     private rootElement: HTMLElement
   ) {}
 
   /**
-   * Initializes the router by adding event listeners and rendering the initial module.
+   * Returns the singleton instance of the router
    */
-  init(): void {
+  public static getInstance(
+    routes?: RouteConfig[],
+    rootElement?: HTMLElement
+  ): Router {
+    if (!Router.instance && routes && rootElement) {
+      Router.instance = new Router(routes, rootElement);
+    } else if (!Router.instance) {
+      throw new Error("Router instance needs to be initialized first.");
+    }
+    return Router.instance;
+  }
+
+  /**
+   * Initializes the router
+   */
+  public init(): void {
     window.addEventListener("popstate", () => this.navigate());
     document.addEventListener("DOMContentLoaded", () => this.navigate());
   }
 
-  private async navigate(): Promise<void> {
+  /**
+   * Navigates to the specified path.
+   */
+  public navigateTo(path: string): void {
+    window.history.pushState({}, "", path);
+    this.navigate();
+  }
+
+  private async navigate(path?: string): Promise<void> {
     try {
-      const currentPath = this.getSanitizedPath(window.location.pathname);
+      const currentPath = path
+        ? this.getSanitizedPath(path)
+        : this.getSanitizedPath(window.location.pathname);
       const matchedRoute = await this.findMatchingRoute(
         this.routes,
         currentPath,

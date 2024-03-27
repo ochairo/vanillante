@@ -2,5 +2,5 @@ import Router from "@infrastructure/router/router";
 import { routesConfig } from "./routes";
 
 const rootElement = document.getElementById("root")!;
-const router = new Router(routesConfig, rootElement);
+const router = Router.getInstance(routesConfig, rootElement);
 router.init();
