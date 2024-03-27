@@ -1,7 +1,8 @@
 import style from "@error/presentation/error.component.css";
 import template from "@error/presentation/error.component.html";
+import BaseComponent from "@infrastructure/base-component/base.component";
 
-export class ErrorComponent extends HTMLElement {
+export class ErrorComponent extends BaseComponent {
   _shadowRoot: ShadowRoot;
   _template: string;
 
@@ -11,11 +12,7 @@ export class ErrorComponent extends HTMLElement {
     this._template = `<style>${style}</style>${template}`;
   }
 
-  connectedCallback() {
-    this.render();
-  }
-
-  async render() {
+  async onInit() {
     this._shadowRoot.innerHTML = this._template;
   }
 }

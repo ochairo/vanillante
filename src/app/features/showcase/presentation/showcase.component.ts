@@ -1,10 +1,12 @@
+import BaseComponent from "@infrastructure/base-component/base.component";
+import Router from "@infrastructure/router/router";
 import { ShowcaseData } from "@showcase/domain/entities/showcase.entity";
 import GetShowcase from "@showcase/domain/usecases/get-showcase.usecase";
 import style from "@showcase/presentation/showcase.component.css";
 import template from "@showcase/presentation/showcase.component.html";
 import "../../../infrastructure/ui-components/atoms/input/input.component";
 
-class ShowcaseComponent extends HTMLElement {
+class ShowcaseComponent extends BaseComponent {
   private _shadowRoot: ShadowRoot;
   private _getShowcase: GetShowcase | null;
   private _apiData: ShowcaseData[] = [];
@@ -15,12 +17,7 @@ class ShowcaseComponent extends HTMLElement {
     this._shadowRoot = this.attachShadow({ mode: "open" });
   }
 
-  connectedCallback() {
-    this.render();
-    this.setupEventListeners();
-  }
-
-  private async render() {
+  async onInit(): Promise<void> {
     this._shadowRoot.innerHTML = `<style>${style}</style>${template}`;
 
     if (this._getShowcase) {
@@ -35,7 +32,7 @@ class ShowcaseComponent extends HTMLElement {
     }
   }
 
-  private renderTable() {
+  private renderTable(): void {
     const tbody = this._shadowRoot.querySelector("tbody");
     if (tbody) {
       tbody.innerHTML = this._apiData
@@ -55,13 +52,10 @@ class ShowcaseComponent extends HTMLElement {
     }
   }
 
-  private setupEventListeners() {
-    // Setup event listeners
-  }
-
   // eslint-disable-next-line @typescript-eslint/no-unused-vars
   private displayError(message: string) {
-    // Display error message in the component
+    const router = Router.getInstance();
+    router.navigateTo("/error");
   }
 }
 
