@@ -1,13 +1,15 @@
 /**
- * Base class for custom elements that provides lifecycle hooks.
+ * Base class for custom elements
  */
 export default class BaseComponent extends HTMLElement {
   connectedCallback() {
-    this.onInit(); // Custom hook for initialization
+    console.log("[BaseComponent] Element connected to the DOM");
+    this.onInit();
   }
 
   disconnectedCallback() {
-    this.onDestroy(); // Custom hook for cleanup
+    console.log("[BaseComponent] Element disconnected from the DOM");
+    this.onDestroy();
   }
 
   attributeChangedCallback(
@@ -15,7 +17,8 @@ export default class BaseComponent extends HTMLElement {
     oldValue: string | null,
     newValue: string | null
   ) {
-    this.onAttributeChanged(name, oldValue, newValue); // Custom hook for attribute changes
+    console.log("[BaseComponent] Attribute changed");
+    this.onAttributeChanged(name, oldValue, newValue);
   }
 
   // Custom lifecycle hooks, can be overridden in child classes
@@ -28,12 +31,13 @@ export default class BaseComponent extends HTMLElement {
   }
 
   protected onAttributeChanged(
+    // eslint-disable-next-line @typescript-eslint/no-unused-vars
     name: string,
+    // eslint-disable-next-line @typescript-eslint/no-unused-vars
     oldValue: string | null,
+    // eslint-disable-next-line @typescript-eslint/no-unused-vars
     newValue: string | null
   ) {
-    console.log(
-      `Attribute '${name}' changed from '${oldValue}' to '${newValue}'`
-    );
+    // Default implementation for attribute changes
   }
 }
