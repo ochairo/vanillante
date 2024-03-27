@@ -3,12 +3,10 @@ import template from "@error/presentation/error.component.html";
 import BaseComponent from "@infrastructure/base-component/base.component";
 
 export class ErrorComponent extends BaseComponent {
-  _shadowRoot: ShadowRoot;
   _template: string;
 
   constructor() {
     super();
-    this._shadowRoot = this.attachShadow({ mode: "open" });
     this._template = `<style>${style}</style>${template}`;
   }
 

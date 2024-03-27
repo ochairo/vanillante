@@ -2,6 +2,12 @@
  * Base class for custom elements
  */
 export default class BaseComponent extends HTMLElement {
+  protected _shadowRoot: ShadowRoot;
+
+  constructor() {
+    super();
+    this._shadowRoot = this.attachShadow({ mode: "open" });
+  }
   connectedCallback() {
     console.log("[BaseComponent] Element connected to the DOM");
     this.onInit();

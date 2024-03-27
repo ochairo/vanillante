@@ -7,7 +7,6 @@ import template from "@showcase/presentation/showcase.component.html";
 import "../../../infrastructure/ui-components/atoms/input/input.component";
 
 class ShowcaseComponent extends BaseComponent {
-  private _shadowRoot: ShadowRoot;
   private _getShowcase: GetShowcase | null;
   private _apiData: ShowcaseData[] = [];
   router = Router.getInstance();
@@ -15,7 +14,6 @@ class ShowcaseComponent extends BaseComponent {
   constructor(getShowcase?: GetShowcase) {
     super();
     this._getShowcase = getShowcase || null;
-    this._shadowRoot = this.attachShadow({ mode: "open" });
   }
 
   async onInit(): Promise<void> {
