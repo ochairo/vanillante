@@ -1,10 +1,10 @@
 import BaseComponent from "@infrastructure/base-component/base.component";
 import Router from "@infrastructure/router/router";
+import "@infrastructure/ui-components/atoms/input/input.component";
 import { ShowcaseData } from "@showcase/domain/entities/showcase.entity";
 import GetShowcase from "@showcase/domain/usecases/get-showcase.usecase";
 import style from "@showcase/presentation/showcase.component.css";
 import template from "@showcase/presentation/showcase.component.html";
-import "../../../infrastructure/ui-components/atoms/input/input.component";
 
 class ShowcaseComponent extends BaseComponent {
   private _getShowcase: GetShowcase | null;
