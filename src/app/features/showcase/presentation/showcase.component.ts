@@ -10,6 +10,7 @@ class ShowcaseComponent extends BaseComponent {
   private _shadowRoot: ShadowRoot;
   private _getShowcase: GetShowcase | null;
   private _apiData: ShowcaseData[] = [];
+  router = Router.getInstance();
 
   constructor(getShowcase?: GetShowcase) {
     super();
@@ -52,10 +53,12 @@ class ShowcaseComponent extends BaseComponent {
     }
   }
 
-  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   private displayError(message: string) {
-    const router = Router.getInstance();
-    router.navigateTo("/error");
+    this._shadowRoot.innerHTML = `<h1>Error: ${message}</h1>`;
+  }
+
+  private navigateToErrorPage() {
+    this.router.navigateTo("/error");
   }
 }
 
