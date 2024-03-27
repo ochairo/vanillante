@@ -8,7 +8,7 @@
 ## Overview
 
 This is a starter template project for single page applications in vanilla-ts.  
-It is framework agnostic with minimal runtime dependencies, enabling easy customization with  
+It is Framework-Agnostic with minimal runtime dependencies, enabling easy customization with  
 frameworks and libraries.
 
 ## Technology stack
@@ -21,7 +21,7 @@ Initial technology stack is simple.
 
 ## Architecture
 
-It is architecture agnostic, but follows key principles including separation of concerns,  
+It is Architecture-Agnostic, but follows key principles including separation of concerns,  
 SOLID principles, atomic design, software design patterns and readable code.
 
 This ensures that the application will be easy to maintain, scale, modify and enables integrations of architectures.
