@@ -7,7 +7,7 @@
 
 ## Overview
 
-This is a starter template project for single page applications in vanilla-ts.  
+This is a starter template project for single page applications in vanilla TypeScript.  
 It is Framework-Agnostic with minimal runtime dependencies, enabling integrations of frameworks and libraries.
 
 ## Technology stack
