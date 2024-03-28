@@ -58,13 +58,10 @@ This ensures that the application will be easy to maintain, scale, modify and en
 │   │   │       ├── presentation         # - Presentation components for the feature
 │   │   │       └── [feature].module.ts  # - Module file for the feature
 │   │   │
-│   │   ├── infrastructure               # Infrastructure
-│   │   │   ├── adapters                 # - Adapters for external services
-│   │   │   │   └── auth                 # - Adapter for external auth services
-│   │   │   ├── http                     # - HTTP-related code
-│   │   │   ├── router                   # - Router code for handling routing
-│   │   │   ├── styles                   # - Stylesheets for styling the application
-│   │   │   └── ui-components            # - UI components
+│   │   ├── adapters                     # Adapters for external services
+│   │   │   ├── auth                     # - Adapt Auth service
+│   │   │   ├── http                     # - Adapt HTTP Client
+│   │   │   └── ui                       # - Adapt UI component library
 │   │   │       ├── atoms                # - Basic UI elements
 │   │   │       ├── molecules            # - Simple UI components
 │   │   │       └── organisms            # - Complex UI components
@@ -72,6 +69,11 @@ This ensures that the application will be easy to maintain, scale, modify and en
 │   │   ├── main.html                    # Entry point html
 │   │   ├── main.ts                      # Bootstrapping
 │   │   └── routes.ts                    # Routing configuration
+│   │
+│   ├── packages                         # Implementation of NPM Libraries
+│   │   ├── vanillatte-http              # - HTTP Client
+│   │   ├── vanillatte-router            # - Router
+│   │   └── vanillatte-ui                # - UI components
 │   │
 │   ├── mock                             # Mock
 │   │   ├── data                         # - Mock data stored in JSON files
