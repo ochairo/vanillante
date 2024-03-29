@@ -153,9 +153,9 @@ class SampleComponent extends BaseComponent {
     this._shadowRoot.innerHTML = `<style>${style}</style>${template}`;
   }
 
-  onInit() {... }
+  onInit() { ... }
 
-  onDestroy() {... }
+  onDestroy() { ... }
 
 }
 
