@@ -137,8 +137,7 @@ You have multiple options for development.
 
 ## Development sample
 
-### Component
-
+Component
 ```ts
 class TitleComponent extends BaseComponent {
   constructor() {
