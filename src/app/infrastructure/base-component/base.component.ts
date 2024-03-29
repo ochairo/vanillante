@@ -1,13 +1,15 @@
 /**
- * Base class for custom elements
+ * [BaseComponent] Base class for custom elements
  */
 export default class BaseComponent extends HTMLElement {
+  /** [BaseComponent] Shadow root of the element */
   protected _shadowRoot: ShadowRoot;
 
   constructor() {
     super();
     this._shadowRoot = this.attachShadow({ mode: "open" });
   }
+
   connectedCallback() {
     console.log("[BaseComponent] Element connected to the DOM");
     this.onInit();
@@ -27,15 +29,19 @@ export default class BaseComponent extends HTMLElement {
     this.onAttributeChanged(name, oldValue, newValue);
   }
 
-  // Custom lifecycle hooks, can be overridden in child classes
-  protected onInit() {
-    // Default implementation for initialization
-  }
+  /**
+   * [BaseComponent] onInit: Called when the element is connected to the DOM
+   */
+  protected onInit() {}
 
-  protected onDestroy() {
-    // Default implementation for cleanup
-  }
+  /**
+   * [BaseComponent] onDestroy: Called when the element is disconnected from the DOM
+   */
+  protected onDestroy() {}
 
+  /**
+   * [BaseComponent] onAttributeChanged: Called when an attribute is changed
+   */
   protected onAttributeChanged(
     // eslint-disable-next-line @typescript-eslint/no-unused-vars
     name: string,
@@ -43,7 +49,5 @@ export default class BaseComponent extends HTMLElement {
     oldValue: string | null,
     // eslint-disable-next-line @typescript-eslint/no-unused-vars
     newValue: string | null
-  ) {
-    // Default implementation for attribute changes
-  }
+  ) {}
 }

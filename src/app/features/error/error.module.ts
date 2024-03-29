@@ -15,4 +15,7 @@ const errorModule = () =>
       return Promise.reject(error);
     });
 
+/**
+ * [errorModule] Module to load the error component
+ */
 export default errorModule;

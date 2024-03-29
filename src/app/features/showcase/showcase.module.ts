@@ -25,4 +25,7 @@ const showcaseModule = () =>
       return Promise.reject(error);
     });
 
+/**
+ * [showcaseModule] Module to load the showcase component
+ */
 export default showcaseModule;

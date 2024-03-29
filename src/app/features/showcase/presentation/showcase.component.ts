@@ -6,6 +6,9 @@ import GetShowcase from "@showcase/domain/usecases/get-showcase.usecase";
 import style from "@showcase/presentation/showcase.component.css";
 import template from "@showcase/presentation/showcase.component.html";
 
+/**
+ * [ShowcaseComponent] Component to display UI samples
+ */
 class ShowcaseComponent extends BaseComponent {
   private _getShowcase: GetShowcase | null;
   private _apiData: ShowcaseData[] = [];
@@ -13,12 +16,14 @@ class ShowcaseComponent extends BaseComponent {
 
   constructor(getShowcase?: GetShowcase) {
     super();
+    this._shadowRoot.innerHTML = `<style>${style}</style>${template}`;
     this._getShowcase = getShowcase || null;
   }
 
+  /**
+   * Initialize the component
+   */
   async onInit(): Promise<void> {
-    this._shadowRoot.innerHTML = `<style>${style}</style>${template}`;
-
     if (this._getShowcase) {
       try {
         const data = await this._getShowcase.execute();
@@ -31,20 +36,22 @@ class ShowcaseComponent extends BaseComponent {
     }
   }
 
+  /**
+   * Render the table with the data
+   */
   private renderTable(): void {
     const tbody = this._shadowRoot.querySelector("tbody");
     if (tbody) {
       tbody.innerHTML = this._apiData
         .map(
-          (item) =>
-            `
-          <tr>
-            <td>${item.id}</td>
-            <td>${item.name}</td>
-            <td>${item.description}</td>
-            <td>${item.price}</td>
-            <td><input-component override-style="input {color: blue;}"></input-component></td>
-          </tr>
+          (item) => `
+            <tr>
+              <td>${item.id}</td>
+              <td>${item.name}</td>
+              <td>${item.description}</td>
+              <td>${item.price}</td>
+              <td><input-component override-style="input {color: blue;}"></input-component></td>
+            </tr>
           `
         )
         .join("");
