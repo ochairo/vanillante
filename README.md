@@ -135,9 +135,9 @@ You have multiple options for development.
 - [Commit rules](docs/wiki/development-rules/commit_rules.md)
 - [Branch strategy](docs/wiki/development-rules/branch_strategy.md)
 
-### Samples
+## Devalopment Sample
 
-#### Component
+### Component
 
 How to write components in vanillatte.
 
