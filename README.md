@@ -139,8 +139,6 @@ You have multiple options for development.
 
 ### Component
 
-How to write components in vanillatte.
-
 ```ts
 class SampleComponent extends BaseComponent {
   constructor() {
