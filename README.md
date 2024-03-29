@@ -134,3 +134,30 @@ You have multiple options for development.
 - [Naming conventions](docs/wiki/development-rules/naming_conventions.md)
 - [Commit rules](docs/wiki/development-rules/commit_rules.md)
 - [Branch strategy](docs/wiki/development-rules/branch_strategy.md)
+
+### Samples
+
+#### Component
+
+How to write components in vanillatte.
+
+```ts
+import style from "./sample.component.css";
+import template from "./sample.component.html";
+
+class SampleComponent extends BaseComponent {
+  constructor() {
+    super();
+    this._shadowRoot.innerHTML = `<style>${style}</style>${template}`;
+  }
+
+  onInit() {... }
+
+  onDestroy() {... }
+
+}
+
+customElements.define("sample-component", SampleComponent);
+export default SampleComponent;
+```
+
