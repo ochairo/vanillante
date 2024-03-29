@@ -104,7 +104,7 @@ You have multiple options for setting up this project:
 
   - [How to setup github codespace](docs/wiki/onboarding-setup/codespace_setup.md)
 
-## Development
+## Getting started
 
 You have multiple options for development.
 
