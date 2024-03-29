@@ -142,6 +142,7 @@ You have multiple options for development.
 How to write components in vanillatte.
 
 ```ts
+import BaseComponent from "./bar/baz/base.component";
 import style from "./sample.component.css";
 import template from "./sample.component.html";
 
