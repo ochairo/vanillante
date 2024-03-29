@@ -150,7 +150,6 @@ class TitleComponent extends BaseComponent {
 
   onInit() {
     this.pageName = "Sample"
-    ...
   }
 
   onDestroy() { ... }
