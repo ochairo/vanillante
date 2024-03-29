@@ -135,7 +135,7 @@ You have multiple options for development.
 - [Commit rules](docs/wiki/development-rules/commit_rules.md)
 - [Branch strategy](docs/wiki/development-rules/branch_strategy.md)
 
-## Devalopment Sample
+## Development sample
 
 ### Component
 
