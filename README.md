@@ -140,7 +140,6 @@ You have multiple options for development.
 ### Component
 
 How to write components in vanillatte.
-- Element: `<sample-component></sample-component>`
 
 ```ts
 class SampleComponent extends BaseComponent {
