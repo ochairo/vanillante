@@ -156,7 +156,6 @@ class SampleComponent extends BaseComponent {
   onInit() { ... }
 
   onDestroy() { ... }
-
 }
 
 customElements.define("sample-component", SampleComponent);
