@@ -143,14 +143,10 @@ How to write components in vanillatte.
 - Element: `<sample-component></sample-component>`
 
 ```ts
-import BaseComponent from "./bar/baz/base.component";
-import style from "./sample.component.css";
-import template from "./sample.component.html";
-
 class SampleComponent extends BaseComponent {
   constructor() {
     super();
-    this._shadowRoot.innerHTML = `<style>${style}</style>${template}`;
+    this._shadowRoot.innerHTML = `<h1>Sample</h1>`;
   }
 
   onInit() { ... }
