@@ -140,17 +140,17 @@ You have multiple options for development.
 ### Component
 
 ```ts
-class SampleComponent extends BaseComponent {
+class TitleComponent extends BaseComponent {
   constructor() {
     super();
-    this._shadowRoot.innerHTML = `<h1>Sample</h1>`;
+    this._shadowRoot.innerHTML = `<h1>Title: Sample</h1>`;
   }
 
   onInit() { ... }
 
   onDestroy() { ... }
 }
-customElements.define("sample-component", SampleComponent);
-export default SampleComponent;
+customElements.define("title-component", TitleComponent);
+export default TitleComponent;
 ```
 
