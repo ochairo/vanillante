@@ -141,12 +141,17 @@ Component
 
 ```ts
 class TitleComponent extends BaseComponent {
+  private pageName: string = "";
+
   constructor() {
     super();
-    this._dom.innerHTML = `<h1>Title: Sample</h1>`;
+    this._dom.innerHTML = `<h1>Title: ${pageName}</h1>`;
   }
 
-  onInit() { ... }
+  onInit() {
+    this.pageName = "Sample"
+    ...
+  }
 
   onDestroy() { ... }
 }
