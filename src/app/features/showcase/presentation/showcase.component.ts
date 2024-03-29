@@ -4,7 +4,7 @@ import "@infrastructure/ui-components/atoms/input/input.component";
 import { ShowcaseData } from "@showcase/domain/entities/showcase.entity";
 import GetShowcase from "@showcase/domain/usecases/get-showcase.usecase";
 import style from "@showcase/presentation/showcase.component.css";
-import template from "@showcase/presentation/showcase.component.html";
+import html from "@showcase/presentation/showcase.component.html";
 
 /**
  * [ShowcaseComponent] Component to display UI samples
@@ -16,7 +16,7 @@ class ShowcaseComponent extends BaseComponent {
 
   constructor(getShowcase?: GetShowcase) {
     super();
-    this._shadowRoot.innerHTML = `<style>${style}</style>${template}`;
+    this._dom.innerHTML = `<style>${style}</style>${html}`;
     this._getShowcase = getShowcase || null;
   }
 
@@ -40,7 +40,7 @@ class ShowcaseComponent extends BaseComponent {
    * Render the table with the data
    */
   private renderTable(): void {
-    const tbody = this._shadowRoot.querySelector("tbody");
+    const tbody = this._dom.querySelector("tbody");
     if (tbody) {
       tbody.innerHTML = this._apiData
         .map(
@@ -59,7 +59,7 @@ class ShowcaseComponent extends BaseComponent {
   }
 
   private displayError(message: string) {
-    this._shadowRoot.innerHTML = `<h1>Error: ${message}</h1>`;
+    this._dom.innerHTML = `<h1>Error: ${message}</h1>`;
   }
 
   private navigateToErrorPage() {

@@ -3,11 +3,11 @@
  */
 export default class BaseComponent extends HTMLElement {
   /** [BaseComponent] Shadow root of the element */
-  protected _shadowRoot: ShadowRoot;
+  protected _dom: ShadowRoot;
 
   constructor() {
     super();
-    this._shadowRoot = this.attachShadow({ mode: "open" });
+    this._dom = this.attachShadow({ mode: "open" });
   }
 
   connectedCallback() {

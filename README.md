@@ -138,11 +138,12 @@ You have multiple options for development.
 ## Development sample
 
 Component
+
 ```ts
 class TitleComponent extends BaseComponent {
   constructor() {
     super();
-    this._shadowRoot.innerHTML = `<h1>Title: Sample</h1>`;
+    this._dom.innerHTML = `<h1>Title: Sample</h1>`;
   }
 
   onInit() { ... }
@@ -152,4 +153,3 @@ class TitleComponent extends BaseComponent {
 customElements.define("title-component", TitleComponent);
 export default TitleComponent;
 ```
-

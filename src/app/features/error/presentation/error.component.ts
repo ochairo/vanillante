@@ -5,7 +5,7 @@ import BaseComponent from "@infrastructure/base-component/base.component";
 export class ErrorComponent extends BaseComponent {
   constructor() {
     super();
-    this._shadowRoot.innerHTML = `<style>${style}</style>${template}`;
+    this._dom.innerHTML = `<style>${style}</style>${template}`;
   }
 }
 
