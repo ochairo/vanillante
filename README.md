@@ -138,9 +138,9 @@ You have multiple options for development.
 ## Development sample
 
 Component
-
 ```ts
-class TitleComponent extends BaseComponent {
+// sample.component.ts
+class SampleComponent extends BaseComponent {
   private pageName: string = "";
 
   constructor() {
@@ -154,6 +154,6 @@ class TitleComponent extends BaseComponent {
 
   onDestroy() { ... }
 }
-customElements.define("title-component", TitleComponent);
-export default TitleComponent;
+customElements.define("sample-component", SampleComponent);
+export default SampleComponent;
 ```
