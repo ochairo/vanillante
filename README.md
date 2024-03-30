@@ -119,7 +119,7 @@ You have two options for development.
   This command will launch the development server,  
   and your application will be accessible at `http://localhost:8080`.
 
-### Using docker
+### Using docker environment
 
 - TODO: Start the local development server by  
   ...
