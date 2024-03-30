@@ -41,6 +41,8 @@ class ShowcaseComponent extends BaseComponent {
    */
   private renderTable(): void {
     const tbody = this._dom.querySelector("tbody");
+    const inputSample1 = '<input-component override-style="input {color: black;}"></input-component>'
+    const inputSample2 = '<input-component override-style="input {color: blue;}"></input-component>'
     if (tbody) {
       tbody.innerHTML = this._apiData
         .map(
@@ -50,7 +52,7 @@ class ShowcaseComponent extends BaseComponent {
               <td>${item.name}</td>
               <td>${item.description}</td>
               <td>${item.price}</td>
-              <td><input-component override-style="input {color: blue;}"></input-component></td>
+              <td>${item.id % 3 === 0 ? inputSample1 : inputSample2}</td>
             </tr>
           `
         )
