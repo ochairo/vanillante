@@ -106,9 +106,9 @@ You have multiple options for setting up this project:
 
 ## Getting started
 
-You have multiple options for development.
+You have two options for development.
 
-### Local environment
+### Using host environment
 
 - Start the local development server by executing the following command:
 
@@ -119,12 +119,7 @@ You have multiple options for development.
   This command will launch the development server,  
   and your application will be accessible at `http://localhost:8080`.
 
-### Local docker environment
-
-- TODO: Start the local development server by  
-  ...
-
-### Github codespace
+### Using docker
 
 - TODO: Start the local development server by  
   ...
