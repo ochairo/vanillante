@@ -10,14 +10,14 @@ import html from "@showcase/presentation/showcase.component.html";
  * [ShowcaseComponent] Component to display UI samples
  */
 class ShowcaseComponent extends BaseComponent {
-  private _getShowcase: GetShowcase | null;
+  private _getShowcase: GetShowcase;
   private _apiData: ShowcaseData[] = [];
   router = Router.getInstance();
 
-  constructor(getShowcase?: GetShowcase) {
+  constructor(getShowcase: GetShowcase) {
     super();
     this._dom.innerHTML = `<style>${style}</style>${html}`;
-    this._getShowcase = getShowcase || null;
+    this._getShowcase = getShowcase;
   }
 
   /**
