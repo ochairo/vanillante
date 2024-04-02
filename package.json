@@ -12,7 +12,7 @@
     "// *  Start application (local) and api with mock data                                   ": "",
     "start:mock": "npm run start:local & npm run start:api",
     "// *  Build application                                                                  ": "",
-    "build:dev": "webpack --config=webpack.config.cjs --define-process-env-node-env=prod",
+    "build:dev": "webpack --config=webpack.config.cjs --define-process-env-node-env=dev",
     "// *  Clean up Docker containers, images, networks, and volumes                           ": "",
     "docker:cleanup": "docker rm -f $(docker ps -aq) && docker rmi -f $(docker images -aq) && docker network prune -f && docker volume prune -f",
     "// *  Build Docker image (local)                                                         ": "",
@@ -28,7 +28,7 @@
     "// *  Start Docker container (dev)                                                       ": "",
     "docker:start:dev": "npm run docker:build:dev && npm run docker:run:dev"
   },
-  "dependencies": {
+  "devDependencies": {
     "@swc/core": "^1.4.11",
     "@typescript-eslint/eslint-plugin": "^7.5.0",
     "@typescript-eslint/parser": "^7.5.0",

@@ -11,7 +11,7 @@ COPY package*.json ./
 RUN ls -l
 
 # Install dependencies
-RUN npm ci --only=production --unsafe-perm
+RUN npm ci
 
 # Copy the rest of the application code
 COPY . .
