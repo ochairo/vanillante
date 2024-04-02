@@ -34,6 +34,8 @@ This ensures that the application will be easy to maintain, scale and modify, en
 │   ├── images                           # - Images for documents
 │   └── wiki                             # - Wiki pages
 │
+├── dist                                 # DIST
+│
 ├── scripts                              # Shellscripts
 │   ├── deployment                       # - Deployment tasks
 │   └── utilities                        # - Utility scripts
@@ -79,6 +81,7 @@ This ensures that the application will be easy to maintain, scale and modify, en
 │   │
 │   └── test                             # Test
 │
+├── nginx.config                         # NGINX
 ├── webpack.config.cjs                   # Webpack configuration
 └── package.json                         # Project dependencies
 ```
@@ -133,6 +136,7 @@ You have two options for development.
 ## Development sample
 
 Component
+
 ```ts
 // sample.component.ts
 class SampleComponent extends BaseComponent {

@@ -101,5 +101,8 @@
     "**/.git/subtree-cache/**": true
   },
   "prettier.printWidth": 120,
-  "typescript.preferences.importModuleSpecifier": "non-relative"
+  "typescript.preferences.importModuleSpecifier": "non-relative",
+  "[dockerfile]": {
+    "editor.defaultFormatter": "foxundermoon.shell-format"
+  }
 }

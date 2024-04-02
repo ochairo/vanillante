@@ -5,7 +5,7 @@ const path = require("path");
 console.info("NODE_ENV:", process.env.NODE_ENV);
 module.exports = {
   mode: "production",
-  entry: "./src/app/main.ts",
+  entry: "./src/app/index.ts",
   output: {
     filename: "bundle.js",
     path: path.resolve(__dirname, "dist"),
@@ -34,7 +34,7 @@ module.exports = {
       "@test": path.resolve("src/test"),
     },
   },
-  plugins: [new HtmlWebpackPlugin({ template: "./src/app/main.html" })],
+  plugins: [new HtmlWebpackPlugin({ template: "./src/app/index.html" })],
   watchOptions: { ignored: /node_modules/ },
   devServer: {
     static: { directory: path.join(__dirname, "dist") },

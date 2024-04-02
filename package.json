@@ -10,21 +10,37 @@
     "// *  Start application (dev)                                                            ": "",
     "start:dev": "webpack serve --config=webpack.config.cjs --define-process-env-node-env=dev",
     "// *  Start application (local) and api with mock data                                   ": "",
-    "start:mock": "npm run start:local & npm run start:api"
+    "start:mock": "npm run start:local & npm run start:api",
+    "// *  Build application                                                                  ": "",
+    "build:dev": "webpack --config=webpack.config.cjs --define-process-env-node-env=prod",
+    "// *  Clean up Docker containers, images, networks, and volumes                           ": "",
+    "docker:cleanup": "docker rm -f $(docker ps -aq) && docker rmi -f $(docker images -aq) && docker network prune -f && docker volume prune -f",
+    "// *  Build Docker image (local)                                                         ": "",
+    "docker:build:local": "TODO",
+    "// *  Run Docker container (local)                                                       ": "",
+    "docker:run:local": "TODO",
+    "// *  Start Docker container (local) and api with mock data                              ": "",
+    "docker:start:mock": "TODO",
+    "// *  Build Docker image (dev)                                                           ": "",
+    "docker:build:dev": "docker build -t vanillatte:v0 .",
+    "// *  Run Docker container (dev)                                                         ": "",
+    "docker:run:dev": "docker run -d -p 8080:8080 vanillatte:v0",
+    "// *  Start Docker container (dev)                                                       ": "",
+    "docker:start:dev": "npm run docker:build:dev && npm run docker:run:dev"
   },
-  "devDependencies": {
-    "@swc/core": "^1.4.8",
-    "@typescript-eslint/eslint-plugin": "^7.3.1",
-    "@typescript-eslint/parser": "^7.3.1",
+  "dependencies": {
+    "@swc/core": "^1.4.11",
+    "@typescript-eslint/eslint-plugin": "^7.5.0",
+    "@typescript-eslint/parser": "^7.5.0",
     "css-loader": "^6.10.0",
-    "express": "^4.19.1",
+    "express": "^4.19.2",
     "html-loader": "^5.0.0",
     "html-webpack-plugin": "^5.6.0",
     "lefthook": "^1.6.7",
     "postcss-loader": "^8.1.1",
     "swc-loader": "^0.2.6",
-    "webpack": "^5.90.3",
+    "webpack": "^5.91.0",
     "webpack-cli": "^5.1.4",
-    "webpack-dev-server": "^5.0.3"
+    "webpack-dev-server": "^5.0.4"
   }
 }
