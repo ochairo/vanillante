@@ -31,8 +31,8 @@ COPY --from=builder /usr/src/app/dist /usr/share/nginx/html
 # Copy nginx configuration
 COPY nginx.conf /etc/nginx/nginx.conf
 
-# Expose port 8080
-EXPOSE 8080
+# Expose port 80
+EXPOSE 80
 
 # Command to start nginx
 CMD ["nginx", "-g", "daemon off;"]
