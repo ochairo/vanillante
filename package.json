@@ -24,7 +24,7 @@
     "// *  Build Docker image (dev)                                                           ": "",
     "docker:build:dev": "docker build -t vanillatte:v0 .",
     "// *  Run Docker container (dev)                                                         ": "",
-    "docker:run:dev": "docker run -d vanillatte:v0",
+    "docker:run:dev": "docker run -d -p 80:80 vanillatte:v0",
     "// *  Start Docker container (dev)                                                       ": "",
     "docker:start:dev": "npm run docker:build:dev && npm run docker:run:dev"
   },
