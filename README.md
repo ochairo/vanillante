@@ -29,8 +29,12 @@ This ensures that the application will be easy to maintain, scale and modify, en
 ## Directory structure
 
 ```bash
+├── .vscode                              # VS code settings
+│   ├── extensions.json                  # - Extensions
+│   └── settings.json                    # - Settings
+│
 ├── docs                                 # Documentation
-│   ├── diagrams                         # - Draw.io diagrams
+│   ├── diagrams                         # - Drawing files made with VS code extensions
 │   ├── images                           # - Images for documents
 │   └── wiki                             # - Wiki pages
 │
@@ -52,7 +56,7 @@ This ensures that the application will be easy to maintain, scale and modify, en
 │   │   │       │   │   ├── local        # - Local data storage logic
 │   │   │       │   │   └── remote       # - Remote data fetching logic
 │   │   │       │   └── repositories     # - Managing data access
-│   │   │       ├── domain               # - Feature-specific domain (can reference core domain)
+│   │   │       ├── domain               # - Feature-specific domain (can ref core domain)
 │   │   │       │   ├── interfaces       # - Interfaces used within the feature
 │   │   │       │   └── usecases         # - Feature-specific business logic
 │   │   │       ├── presentation         # - Presentation components for the feature
@@ -81,7 +85,7 @@ This ensures that the application will be easy to maintain, scale and modify, en
 │   │
 │   └── test                             # Test
 │
-├── nginx.config                         # NGINX
+├── nginx.conf                           # NGINX
 ├── webpack.config.cjs                   # Webpack configuration
 └── package.json                         # Project dependencies
 ```
