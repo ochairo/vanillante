@@ -41,7 +41,7 @@ This ensures that the application will be easy to maintain, scale and modify, en
 │
 ├── scripts                              # Shellscripts
 │   ├── deployment                       # - Deployment tasks
-│   └── utilities                        # - Utility scripts
+│   └── onboarding                       # - On boarding tasks
 │
 ├── src
 │   ├── app
