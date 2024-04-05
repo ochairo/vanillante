@@ -15,12 +15,14 @@
       "@error/*": ["./src/app/features/error/*"],
       // CORE
       "@core/*": ["./src/app/core/*"],
-      // INFRASTRUCTURE
-      "@infrastructure/*": ["./src/app/infrastructure/*"],
+      // ADAPTERS
+      "@adapters/*": ["./src/app/adapters/*"],
       // MOCK
       "@mock/*": ["./src/mock/*"],
       // TEST
-      "@test/*": ["./src/test/*"]
+      "@test/*": ["./src/test/*"],
+      // PACKAGES
+      "@packages/*": ["./src/packages/*"]
     },
     "resolveJsonModule": true,
     "sourceMap": true,

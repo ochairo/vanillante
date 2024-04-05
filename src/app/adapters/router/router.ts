@@ -1,6 +1,6 @@
-import { ERRORS } from "@infrastructure/router/constants";
-import { Module, RouteConfig } from "@infrastructure/router/interfaces";
+import { ERRORS } from "./constants";
 import RouterError from "./error";
+import { Module, RouteConfig } from "./interfaces";
 
 class Router {
   private static instance: Router | null = null;

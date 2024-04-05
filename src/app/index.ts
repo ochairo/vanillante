@@ -1,4 +1,4 @@
-import Router from "@infrastructure/router/router";
+import Router from "@adapters/router/router";
 import { routesConfig } from "./routes";
 
 const rootElement = document.getElementById("root")!;

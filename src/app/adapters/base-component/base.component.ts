@@ -1,4 +1,4 @@
-import VltComponent from "../../../../packages/vanillatte-core/component";
+import VltComponent from "../../../packages/vanillatte-core/component";
 
 /**
  * [BaseComponent] Base class for custom elements

@@ -1,6 +1,5 @@
-import BaseComponent from "@infrastructure/adapters/component/base.component";
-import Router from "@infrastructure/router/router";
-import "@infrastructure/ui-components/atoms/input/input.component";
+import BaseComponent from "@adapters/base-component/base.component";
+import Router from "@adapters/router/router";
 import { ShowcaseData } from "@showcase/domain/entities/showcase.entity";
 import GetShowcase from "@showcase/domain/usecases/get-showcase.usecase";
 import style from "@showcase/presentation/showcase.component.css";

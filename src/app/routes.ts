@@ -1,5 +1,5 @@
+import { RouteConfig } from "@adapters/router/interfaces";
 import errorModule from "@error/error.module";
-import { RouteConfig } from "@infrastructure/router/interfaces";
 import showcaseModule from "@showcase/showcase.module";
 
 export const routesConfig: RouteConfig[] = [

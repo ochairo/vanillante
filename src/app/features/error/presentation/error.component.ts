@@ -1,6 +1,6 @@
+import BaseComponent from "@adapters/base-component/base.component";
 import style from "@error/presentation/error.component.css";
 import template from "@error/presentation/error.component.html";
-import BaseComponent from "@infrastructure/adapters/component/base.component";
 
 export class ErrorComponent extends BaseComponent {
   constructor() {

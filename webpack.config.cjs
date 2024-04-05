@@ -26,12 +26,14 @@ module.exports = {
       "@error": path.resolve("src/app/features/error"),
       // CORE
       "@core": path.resolve("src/app/core"),
-      // INFRASTRUCTURE
-      "@infrastructure": path.resolve("src/app/infrastructure"),
+      // ADAPTERS
+      "@adapters": path.resolve("src/app/adapters"),
       // MOCK
       "@mock": path.resolve("src/mock"),
       // TEST
       "@test": path.resolve("src/test"),
+      // PACKAGES
+      "@packages": path.resolve("src/packages"),
     },
   },
   plugins: [new HtmlWebpackPlugin({ template: "./src/app/index.html" })],

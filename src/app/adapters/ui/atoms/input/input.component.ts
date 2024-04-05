@@ -1,5 +1,5 @@
-import style from "@infrastructure/ui-components/atoms/input/input.component.css";
-import template from "@infrastructure/ui-components/atoms/input/input.component.html";
+import style from "@adapters/ui/atoms/input/input.component.css";
+import template from "@adapters/ui/atoms/input/input.component.html";
 
 export class InputComponent extends HTMLElement {
   _shadowRoot: ShadowRoot;

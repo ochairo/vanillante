@@ -45,10 +45,6 @@ This ensures that the application will be easy to maintain, scale and modify, en
 │   └── utilities                        # - Utility scripts
 ├── src
 │   ├── app
-│   │   ├── core                         # Core
-│   │   │   └── domain                   # - Core business logics
-│   │   │       └── usecases             # - Core usecases
-│   │   │
 │   │   ├── features                     # Features
 │   │   │   └── [feature]                # - A specific feature
 │   │   │       ├── data                 # - Data-related logic
@@ -63,6 +59,7 @@ This ensures that the application will be easy to maintain, scale and modify, en
 │   │   │       └── [feature].module.ts  # - Module file for the feature
 │   │   │
 │   │   ├── adapters                     # Adapters for external services
+│   │   │   ├── frame                    # - Adapt Js Frameworks
 │   │   │   ├── auth                     # - Adapt Auth service
 │   │   │   ├── http                     # - Adapt HTTP Client
 │   │   │   └── ui                       # - Adapt UI component library

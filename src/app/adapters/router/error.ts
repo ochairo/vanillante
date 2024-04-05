@@ -1,4 +1,4 @@
-import { CustomErrorType } from "@infrastructure/router/interfaces";
+import { CustomErrorType } from "./interfaces";
 
 class RouterError extends Error implements CustomErrorType {
   public status: number;
