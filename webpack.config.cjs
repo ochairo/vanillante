@@ -37,8 +37,4 @@ module.exports = {
   },
   plugins: [new HtmlWebpackPlugin({ template: "./src/app/index.html" })],
   watchOptions: { ignored: /node_modules/ },
-  devServer: {
-    static: { directory: path.join(__dirname, "dist") },
-    historyApiFallback: true,
-  },
 };

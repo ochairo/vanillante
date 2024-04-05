@@ -7,17 +7,11 @@ WORKDIR /usr/src/app
 # Copy package.json and package-lock.json
 COPY package*.json ./
 
-# Display contents of the current directory (debugging)
-RUN ls -l
-
 # Install dependencies
 RUN npm ci
 
 # Copy the rest of the application code
 COPY . .
-
-# Display contents of the 'dist' directory (debugging)
-RUN ls -l ./dist
 
 # Build the application
 RUN npm run build:dev
