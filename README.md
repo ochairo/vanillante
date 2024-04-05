@@ -45,6 +45,15 @@ This ensures that the application will be easy to maintain, scale and modify, en
 │
 ├── src
 │   ├── app
+│   │   ├── adapters                     # Adapters for external services
+│   │   │   ├── frame                    # - Adapt Js Frameworks
+│   │   │   ├── auth                     # - Adapt Auth service
+│   │   │   ├── http                     # - Adapt HTTP Client
+│   │   │   └── ui                       # - Adapt UI component library
+│   │   │       ├── atoms                # - Basic UI elements
+│   │   │       ├── molecules            # - Simple UI components
+│   │   │       └── organisms            # - Complex UI components
+│   │   │
 │   │   ├── features                     # Features
 │   │   │   └── [feature]                # - A specific feature
 │   │   │       ├── data                 # - Data-related logic
@@ -58,28 +67,19 @@ This ensures that the application will be easy to maintain, scale and modify, en
 │   │   │       ├── presentation         # - Presentation components for the feature
 │   │   │       └── [feature].module.ts  # - Module file for the feature
 │   │   │
-│   │   ├── adapters                     # Adapters for external services
-│   │   │   ├── frame                    # - Adapt Js Frameworks
-│   │   │   ├── auth                     # - Adapt Auth service
-│   │   │   ├── http                     # - Adapt HTTP Client
-│   │   │   └── ui                       # - Adapt UI component library
-│   │   │       ├── atoms                # - Basic UI elements
-│   │   │       ├── molecules            # - Simple UI components
-│   │   │       └── organisms            # - Complex UI components
-│   │   │
 │   │   ├── main.html                    # Entry point html
 │   │   ├── main.ts                      # Bootstrapping
 │   │   └── routes.ts                    # Routing configuration
+│   │
+│   ├── mock                             # Mock
+│   │   ├── data                         # - Mock data stored in JSON files
+│   │   └── server                       # - Mock API server utilizing the mock data
 │   │
 │   ├── packages                         # Implementation of NPM Libraries
 │   │   ├── vanillatte-core              # - Core functionality
 │   │   ├── vanillatte-http              # - HTTP Client
 │   │   ├── vanillatte-router            # - Router
 │   │   └── vanillatte-ui                # - UI components
-│   │
-│   ├── mock                             # Mock
-│   │   ├── data                         # - Mock data stored in JSON files
-│   │   └── server                       # - Mock API server utilizing the mock data
 │   │
 │   └── test                             # Test codes
 │
