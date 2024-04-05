@@ -1,7 +1,7 @@
 /**
  * [BaseComponent] Base class for custom elements
  */
-export default class BaseComponent extends HTMLElement {
+export default class VltComponent extends HTMLElement {
   /** [BaseComponent] Shadow root of the element */
   protected _dom: ShadowRoot;
 

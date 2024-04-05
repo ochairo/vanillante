@@ -1,4 +1,4 @@
-import BaseComponent from "@infrastructure/base-component/base.component";
+import BaseComponent from "@infrastructure/adapters/component/base.component";
 import Router from "@infrastructure/router/router";
 import "@infrastructure/ui-components/atoms/input/input.component";
 import { ShowcaseData } from "@showcase/domain/entities/showcase.entity";
@@ -41,8 +41,10 @@ class ShowcaseComponent extends BaseComponent {
    */
   private renderTable(): void {
     const tbody = this._dom.querySelector("tbody");
-    const inputSample1 = '<input-component override-style="input {color: black;}"></input-component>'
-    const inputSample2 = '<input-component override-style="input {color: blue;}"></input-component>'
+    const inputSample1 =
+      '<input-component override-style="input {color: black;}"></input-component>';
+    const inputSample2 =
+      '<input-component override-style="input {color: blue;}"></input-component>';
     if (tbody) {
       tbody.innerHTML = this._apiData
         .map(
