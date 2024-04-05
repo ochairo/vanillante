@@ -67,8 +67,8 @@ This ensures that the application will be easy to maintain, scale and modify, en
 │   │   │       ├── presentation         # - View components for the feature
 │   │   │       └── [feature].module.ts  # - Module file for the feature
 │   │   │
-│   │   ├── index.html                    # Entry point html
-│   │   ├── index.ts                      # Bootstrapping
+│   │   ├── index.html                   # Entry point html
+│   │   ├── index.ts                     # Bootstrapping
 │   │   └── routes.ts                    # Routing configuration
 │   │
 │   ├── mock                             # Mock
