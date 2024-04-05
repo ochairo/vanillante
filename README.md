@@ -60,7 +60,7 @@ This ensures that the application will be easy to maintain, scale and modify, en
 │   │   │       │   ├── datasources      # - Getting the raw data from api or localDB
 │   │   │       │   │   ├── local        # - Local data storage logic
 │   │   │       │   │   └── remote       # - Remote data fetching logic
-│   │   │       │   └── repositories     # - Select, Shape, Merge raw data
+│   │   │       │   └── repositories     # - Select, Shape, Merge raw data for the usecase
 │   │   │       ├── domain               # - Feature-specific domain
 │   │   │       │   ├── interfaces       # - Interfaces used within the feature
 │   │   │       │   └── usecases         # - Feature-specific business logic
