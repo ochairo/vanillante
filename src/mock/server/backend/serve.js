@@ -19,5 +19,5 @@ app.get("/showcase/get", async (_, res) => {
 });
 
 app.listen(PORT, () => {
-  console.log(`Server is running on port ${PORT}`);
+  console.log(`Mock Backend is running on port ${PORT}`);
 });

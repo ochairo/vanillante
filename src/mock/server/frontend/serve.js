@@ -2,6 +2,7 @@ import express from "express";
 import path from "path";
 
 const app = express();
+const PORT = process.env.PORT || 8000;
 
 // Serve static files from the 'public' directory
 const publicPath = path.join(process.cwd(), "dist");
@@ -13,7 +14,6 @@ app.get("*", (req, res) => {
 });
 
 // Start the server
-const PORT = process.env.PORT || 8000;
 app.listen(PORT, () => {
-  console.log(`Server is running on port ${PORT}`);
+  console.log(`Mock Frontend is running on port ${PORT}`);
 });
