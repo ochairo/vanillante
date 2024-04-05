@@ -83,9 +83,10 @@ This ensures that the application will be easy to maintain, scale and modify, en
 │   │
 │   └── test                             # Test codes
 │
+├── Dockerfile                           # Docker image configuration
 ├── nginx.conf                           # NGINX configuration
-├── webpack.config.cjs                   # Webpack configuration
-└── package.json                         # Project dependencies
+├── package.json                         # Project dependencies
+└── webpack.config.cjs                   # Webpack configuration
 ```
 
 ## Onboarding setup
