@@ -73,7 +73,7 @@ This ensures that the application will be easy to maintain, scale and modify, en
 │   │
 │   ├── mock                             # Mock
 │   │   ├── data                         # - Mock data stored in JSON files
-│   │   └── server                       # - Mock API server utilizing the mock data
+│   │   └── server                       # - Mock API serve and Mock SPA serve
 │   │
 │   ├── packages                         # Implementation of NPM Libraries
 │   │   ├── vanillatte-core              # - Core functionality
