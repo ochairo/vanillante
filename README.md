@@ -72,6 +72,7 @@ This ensures that the application will be easy to maintain, scale and modify, en
 │   │   └── routes.ts                    # Routing configuration
 │   │
 │   ├── packages                         # Implementation of NPM Libraries
+│   │   ├── vanillatte-core              # - Core functionality
 │   │   ├── vanillatte-http              # - HTTP Client
 │   │   ├── vanillatte-router            # - Router
 │   │   └── vanillatte-ui                # - UI components
