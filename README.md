@@ -63,7 +63,7 @@ This ensures that the application will be easy to maintain, scale and modify, en
 │   │   │       │   └── repositories     # - Select, Shape, Merge raw data for the usecase
 │   │   │       ├── domain               # - Feature-specific domain
 │   │   │       │   ├── interfaces       # - Interfaces used within the feature
-│   │   │       │   └── usecases         # - Feature-specific business logic
+│   │   │       │   └── usecases         # - Feature-specific logic (retrieve data, validate data, etc..)
 │   │   │       ├── presentation         # - Presentation components for the feature
 │   │   │       └── [feature].module.ts  # - Module file for the feature
 │   │   │
