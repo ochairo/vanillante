@@ -26,7 +26,9 @@
     "// *  Run Docker container (dev)                                                         ": "",
     "docker:run:dev": "docker run -d -p 80:80 vanillatte:v0",
     "// *  Start Docker container (dev)                                                       ": "",
-    "docker:start:dev": "npm run docker:build:dev && npm run docker:run:dev"
+    "docker:start:dev": "npm run docker:build:dev && npm run docker:run:dev",
+    "// *  Deploy to Azure Container Registry (ACR)                                           ": "",
+    "deploy:acr": "sh scripts/deployment/azure/container-registry.sh"
   },
   "devDependencies": {
     "@swc/core": "^1.4.11",
