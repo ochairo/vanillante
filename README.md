@@ -30,7 +30,7 @@ This ensures that the application will be easy to maintain, scale and modify, en
 
 ```bash
 ├── .github                              # Github configurations
-├── .vscode                              # VS code configurations
+├── .vscode                              # VScode configurations
 │
 ├── dist                                 # Compiled code
 │
