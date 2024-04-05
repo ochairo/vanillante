@@ -1,4 +1,4 @@
-import BaseComponent from "@adapters/base-component/base.component";
+import BaseComponent from "@adapters/frame/vanillatte/base.component";
 import style from "@error/presentation/error.component.css";
 import template from "@error/presentation/error.component.html";
 

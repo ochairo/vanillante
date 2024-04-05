@@ -1,4 +1,4 @@
-import BaseComponent from "@adapters/base-component/base.component";
+import BaseComponent from "@adapters/frame/vanillatte/base.component";
 import Router from "@adapters/router/router";
 import { ShowcaseData } from "@showcase/domain/entities/showcase.entity";
 import GetShowcase from "@showcase/domain/usecases/get-showcase.usecase";
