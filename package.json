@@ -2,6 +2,7 @@
   "name": "vanillatte",
   "version": "0.0.0",
   "type": "module",
+  "description": "Vanillatte",
   "scripts": {
     "// *  Start api mock server with mock data                                               ": "",
     "start:api": "node src/mock/server/api.js",
@@ -30,6 +31,9 @@
     "// *  Deploy to Azure Container Registry (ACR)                                           ": "",
     "deploy:acr": "sh scripts/deployment/azure/container-registry.sh"
   },
+  "dependencies": {
+    "// * Here you can add your runtime dependencies.                                         ": ""
+  },
   "devDependencies": {
     "@swc/core": "^1.4.11",
     "@typescript-eslint/eslint-plugin": "^7.5.0",
@@ -41,6 +45,7 @@
     "lefthook": "^1.6.7",
     "postcss-loader": "^8.1.1",
     "swc-loader": "^0.2.6",
+    "typescript": "^5.4.4",
     "webpack": "^5.91.0",
     "webpack-cli": "^5.1.4",
     "webpack-dev-server": "^5.0.4"
