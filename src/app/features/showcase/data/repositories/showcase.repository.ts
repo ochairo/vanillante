@@ -9,6 +9,7 @@ export default class ShowcaseRepository implements IShowcaseRepository {
   }
 
   async get(): Promise<ShowcaseData[]> {
+    // If you need merge or shape data do it here, no necesary to return the same data as the API
     return this._remoteDataSource.get();
   }
 }
