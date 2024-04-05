@@ -5,7 +5,7 @@
   "description": "Vanillatte",
   "scripts": {
     "// *  Start API (mock)                                                                   ": "",
-    "start:mock:backend": "node src/mock/server/backend/serve.js",
+    "start:mock:backend": "nodemon --exec 'NODE_ENV=mock node' src/mock/server/backend/serve.js",
     "// *  Start SPA (mock)                                                                   ": "",
     "start:mock:frontend": "nodemon --exec 'NODE_ENV=mock node' src/mock/server/frontend/serve.js",
     "// *  Start SPA (mock) and API (mock)                                                    ": "",
