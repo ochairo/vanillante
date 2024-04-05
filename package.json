@@ -31,9 +31,7 @@
     "// *  Deploy to Azure Container Registry (ACR)                                           ": "",
     "deploy:acr": "sh scripts/deployment/azure/container-registry.sh"
   },
-  "dependencies": {
-    "// * Here you can add your runtime dependencies.                                         ": ""
-  },
+  "dependencies": {},
   "devDependencies": {
     "@swc/core": "^1.4.11",
     "@typescript-eslint/eslint-plugin": "^7.5.0",
