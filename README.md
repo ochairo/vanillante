@@ -57,10 +57,10 @@ This ensures that the application will be easy to maintain, scale and modify, en
 │   │   ├── features                     # Features
 │   │   │   └── [feature]                # - A specific feature
 │   │   │       ├── data                 # - Data-related logic
-│   │   │       │   ├── datasources      # - Datasources for the feature
+│   │   │       │   ├── datasources      # - Getting the raw data from api or localDB
 │   │   │       │   │   ├── local        # - Local data storage logic
 │   │   │       │   │   └── remote       # - Remote data fetching logic
-│   │   │       │   └── repositories     # - Managing data access
+│   │   │       │   └── repositories     # - Select, Shape, Merge raw data
 │   │   │       ├── domain               # - Feature-specific domain
 │   │   │       │   ├── interfaces       # - Interfaces used within the feature
 │   │   │       │   └── usecases         # - Feature-specific business logic
