@@ -29,16 +29,15 @@ This ensures that the application will be easy to maintain, scale and modify, en
 ## Directory structure
 
 ```bash
-├── .vscode                              # VS code settings
-│   ├── extensions.json                  # - Extensions
-│   └── settings.json                    # - Settings
+├── .github                              # Github configurations
+├── .vscode                              # VS code configurations
+│
+├── dist                                 # Compiled code
 │
 ├── docs                                 # Documentation
 │   ├── diagrams                         # - Drawing files made with VS code extensions
 │   ├── images                           # - Images for documents
 │   └── wiki                             # - Wiki pages
-│
-├── dist                                 # DIST
 │
 ├── scripts                              # Shellscripts
 │   ├── deployment                       # - Deployment tasks
@@ -81,9 +80,9 @@ This ensures that the application will be easy to maintain, scale and modify, en
 │   │   ├── data                         # - Mock data stored in JSON files
 │   │   └── server                       # - Mock API server utilizing the mock data
 │   │
-│   └── test                             # Test
+│   └── test                             # Test codes
 │
-├── nginx.conf                           # NGINX
+├── nginx.conf                           # NGINX configuration
 ├── webpack.config.cjs                   # Webpack configuration
 └── package.json                         # Project dependencies
 ```
