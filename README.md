@@ -55,7 +55,7 @@ This ensures that the application will be easy to maintain, scale and modify, en
 │   │   │       └── organisms            # - Complex UI components
 │   │   │
 │   │   ├── features                     # Features
-│   │   │   └── [feature]                # - A specific feature
+│   │   │   └── [feature]                # - A specific feature (Granularity can vary)
 │   │   │       ├── data                 # - Data-related logic
 │   │   │       │   ├── datasources      # - Getting the raw data from api or localDB
 │   │   │       │   │   ├── local        # - Local data storage logic
@@ -63,8 +63,8 @@ This ensures that the application will be easy to maintain, scale and modify, en
 │   │   │       │   └── repositories     # - Select, Shape, Merge raw data for the usecase
 │   │   │       ├── domain               # - Feature-specific domain
 │   │   │       │   ├── interfaces       # - Interfaces used within the feature
-│   │   │       │   └── usecases         # - Feature-specific logic (retrieve data, validate data, etc..)
-│   │   │       ├── presentation         # - Presentation components for the feature
+│   │   │       │   └── usecases         # - Business logic (get data, validate data, etc..)
+│   │   │       ├── presentation         # - View components for the feature
 │   │   │       └── [feature].module.ts  # - Module file for the feature
 │   │   │
 │   │   ├── main.html                    # Entry point html
