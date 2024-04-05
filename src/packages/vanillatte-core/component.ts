@@ -1,5 +1,5 @@
 export default class VltComponent extends HTMLElement {
-  /** [BaseComponent] Shadow root of the element */
+  /** [vanillatte:core] Shadow root of the element */
   protected _dom: ShadowRoot;
 
   constructor() {
@@ -28,17 +28,17 @@ export default class VltComponent extends HTMLElement {
   }
 
   /**
-   * [BaseComponent] onInit: Called when the element is connected to the DOM
+   * [vanillatte:core] onInit: Called when the element is connected to the DOM
    */
   protected onInit() {}
 
   /**
-   * [BaseComponent] onDestroy: Called when the element is disconnected from the DOM
+   * [vanillatte:core] onDestroy: Called when the element is disconnected from the DOM
    */
   protected onDestroy() {}
 
   /**
-   * [BaseComponent] onAttributeChanged: Called when an attribute is changed
+   * [vanillatte:core] onAttributeChanged: Called when an attribute is changed
    */
   protected onAttributeChanged(
     // eslint-disable-next-line @typescript-eslint/no-unused-vars
@@ -50,7 +50,7 @@ export default class VltComponent extends HTMLElement {
   ) {}
 
   /**
-   * [BaseComponent] setupMutationObserver: Sets up a MutationObserver to detect changes in the DOM
+   * [vanillatte:core] setupMutationObserver: Sets up a MutationObserver to detect changes in the DOM
    */
   protected setupMutationObserver() {
     const observer = new MutationObserver((mutations) => {
