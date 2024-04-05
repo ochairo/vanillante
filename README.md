@@ -35,7 +35,7 @@ This ensures that the application will be easy to maintain, scale and modify, en
 ├── dist                                 # Compiled code
 │
 ├── docs                                 # Documentation
-│   ├── diagrams                         # - Drawing files made with VS code extensions
+│   ├── diagrams                         # - Drawing files (.drawio | .excalidraw)
 │   ├── images                           # - Images for documents
 │   └── wiki                             # - Wiki pages
 │
@@ -45,7 +45,7 @@ This ensures that the application will be easy to maintain, scale and modify, en
 │
 ├── src
 │   ├── app
-│   │   ├── adapters                     # Adapters for external services
+│   │   ├── adapters                     # Adapt external services/libraries
 │   │   │   ├── frame                    # - Adapt Js Frameworks
 │   │   │   ├── auth                     # - Adapt Auth service
 │   │   │   ├── http                     # - Adapt HTTP Client
