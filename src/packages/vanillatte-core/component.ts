@@ -1,6 +1,3 @@
-/**
- * [BaseComponent] Base class for custom elements
- */
 export default class VltComponent extends HTMLElement {
   /** [BaseComponent] Shadow root of the element */
   protected _dom: ShadowRoot;
@@ -13,6 +10,7 @@ export default class VltComponent extends HTMLElement {
   connectedCallback() {
     console.log("[BaseComponent] Element connected to the DOM");
     this.onInit();
+    this.setupMutationObserver();
   }
 
   disconnectedCallback() {
@@ -50,4 +48,22 @@ export default class VltComponent extends HTMLElement {
     // eslint-disable-next-line @typescript-eslint/no-unused-vars
     newValue: string | null
   ) {}
+
+  /**
+   * [BaseComponent] setupMutationObserver: Sets up a MutationObserver to detect changes in the DOM
+   */
+  protected setupMutationObserver() {
+    const observer = new MutationObserver((mutations) => {
+      mutations.forEach((mutation) => {
+        console.log("[BaseComponent] DOM mutation detected:", mutation);
+        // Perform actions based on mutation
+      });
+    });
+
+    observer.observe(this._dom, {
+      attributes: true,
+      childList: true,
+      subtree: true,
+    });
+  }
 }
