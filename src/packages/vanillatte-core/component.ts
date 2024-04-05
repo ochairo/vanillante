@@ -1,4 +1,4 @@
-export default class VllaComponent extends HTMLElement {
+export default class VnltComponent extends HTMLElement {
   /** [vanillatte:core] Shadow root of the element */
   protected _dom: ShadowRoot;
 
