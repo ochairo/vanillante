@@ -81,7 +81,8 @@
     "usecase",
     "usecases",
     "vanillatte",
-    "vaníllatte"
+    "vaníllatte",
+    "vlla"
   ],
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": "explicit",
